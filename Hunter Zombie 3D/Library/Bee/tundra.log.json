@@ -356,12 +356,3 @@
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm","enqueuedNodeIndex":299,"enqueueingNodeAnnotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)","enqueueingNodeIndex":297}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp","enqueuedNodeIndex":298,"enqueueingNodeAnnotation":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm","enqueueingNodeIndex":299}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb","enqueuedNodeIndex":357,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":6}
-{"msg":"nodeRetryBuild","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)","index":297}
-{"msg":"runNodeAction","annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)","displayName":"Csc Assembly-CSharp-Editor","index":297}
-{"msg":"noderesult","processed_node_count":353,"number_of_nodes_ever_queued":357,"annotation":"Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)","index":297,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1900b0aE.dag\\Assembly-CSharp-Editor.dll"}
-{"msg":"newNode","annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb","index":357}
-{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb","displayName":"Copying Assembly-CSharp-Editor.pdb","index":357}
-{"msg":"noderesult","processed_node_count":354,"number_of_nodes_ever_queued":357,"annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb","index":357,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Assembly-CSharp-Editor.pdb"}
-{"msg":"newNode","annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll","index":356}
-{"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll","displayName":"Copying Assembly-CSharp-Editor.dll","index":356}
-{"msg":"noderesult","processed_node_count":355,"number_of_nodes_ever_queued":357,"annotation":"CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll","index":356,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Assembly-CSharp-Editor.dll"}
