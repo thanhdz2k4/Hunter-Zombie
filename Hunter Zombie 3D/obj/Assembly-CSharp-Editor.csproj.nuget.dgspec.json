@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj": {}
+    "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj": {}
   },
   "projects": {
-    "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj": {
+    "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
+        "projectUniqueName": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
         "projectName": "Assembly-CSharp-Editor",
-        "projectPath": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
+        "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\obj\\",
+        "outputPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj": {
-                "projectPath": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj"
+              "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj": {
+                "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj": {
+    "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
+        "projectUniqueName": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
+        "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "e:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\obj\\",
+        "outputPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
