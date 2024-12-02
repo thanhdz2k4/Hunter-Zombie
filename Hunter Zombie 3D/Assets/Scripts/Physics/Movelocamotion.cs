@@ -51,6 +51,12 @@ public class Movelocamotion : MonoBehaviour
         Vector2 input = inputASWD.Data();
         animator.SetFloat("X", input.x);
         animator.SetFloat("Y", input.y);
+        animator.SetBool("Aiming", input.x!=0 || input.y < 0);
+
+        
+            
+
+        
 
         // Get mouse position and calculate distance
         var (success, mousePosition) = mousePositionProvider.GetMousePosition();
@@ -102,4 +108,6 @@ public class Movelocamotion : MonoBehaviour
         characterController.Move(movement);
         rootMotion = Vector3.zero;
     }
+
+    
 }

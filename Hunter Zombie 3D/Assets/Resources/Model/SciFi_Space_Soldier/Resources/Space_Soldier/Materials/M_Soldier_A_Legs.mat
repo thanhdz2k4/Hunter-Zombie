@@ -13,12 +13,13 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - _EMISSION
   - _METALLICGLOSSMAP
   - _NORMALMAP
-  m_LightmapFlags: 5
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -26,7 +27,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 38b68fbba4cb6f0439d14052e127daae, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3ca2a4219fb381842b47566cc95a0f81, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorMask:
@@ -95,24 +96,28 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BumpScale: 1
+    - _BumpScale: -289.5
     - _Cutoff: 0.5
     - _DamageFX: 0
     - _DetailNormalMapScale: 1
     - _DiffuseFactor: 1
     - _DstBlend: 0
-    - _EmissionFactor: 1
+    - _EmissionFactor: 0
     - _EmissiveFactor: 1
+    - _GlossMapScale: 1
     - _Glossiness: 0.9
+    - _GlossyReflections: 1
     - _Metallic: 1
     - _MetalnessFactor: 0
     - _Mode: 0
-    - _OcclusionStrength: 1
+    - _OcclusionStrength: 0
     - _Outline: 0
     - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
     - _Specular: 1
     - _SpecularColorized: 0.826
     - _SpecularFactor: 1
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _UVWorldScale: 1
