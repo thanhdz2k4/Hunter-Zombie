@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Interface\IInput.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\Scripts\Laser\LaserAim.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\Scripts\Interface\IGravityLocamotion.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\Interface\IAim.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\Scripts\Physics\GravitiyLocamotion.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
@@ -154,7 +156,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Common.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.shader" />
-    <None Include="Assets\NewUXMLTemplate.uxml" />
+    <None Include="Assets\UI\UXML\Screens\PlayGame_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.shader" />
