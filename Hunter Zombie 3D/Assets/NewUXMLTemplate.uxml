@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/New%20Render%20Texture.renderTexture?fileID=8400000&amp;guid=7a34fc12978e66c4990fc7d2925767f5&amp;type=2#New Render Texture&apos;); position: absolute; height: 421px; width: 526px; top: 12px; left: 2px; border-top-left-radius: 190px; border-top-right-radius: 190px; border-bottom-right-radius: 190px; border-bottom-left-radius: 190px;" />
+    </ui:VisualElement>
+</ui:UXML>
