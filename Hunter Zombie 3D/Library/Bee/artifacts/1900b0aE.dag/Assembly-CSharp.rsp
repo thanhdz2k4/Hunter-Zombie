@@ -419,6 +419,7 @@
 "Assets/Scripts/Physics/GravitiyLocamotion.cs"
 "Assets/Scripts/Physics/Movelocamotion.cs"
 "Assets/Scripts/Physics/PlayerDirection.cs"
+"Assets/Scripts/VFX/UI/TypeOutScript.cs"
 -langversion:9.0
 
 /deterministic

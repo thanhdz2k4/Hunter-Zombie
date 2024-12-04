@@ -50,12 +50,13 @@
     <UnityVersion>2022.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\admin\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\admin\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.5\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Interface\IInput.cs" />
+    <Compile Include="Assets\Scripts\VFX\UI\TypeOutScript.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\Scripts\Laser\LaserAim.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
@@ -132,6 +133,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorBark.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\UI\UXML\Screens\Intro--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeavesOptimized.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
@@ -165,6 +167,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\UI\UXML\Screens\PlayScreen.uxml" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Triplanar_BumpSpec.shader" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Skybox_Rotating.shader" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_PBR_Water.shader" />

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Intro--Screen" style="flex-grow: 1;">
+        <ui:VisualElement name="Title--Container" style="flex-grow: 0; left: 100px; right: 100px; flex-shrink: 0; height: 396px; position: absolute; top: 300px;">
+            <ui:Label tabindex="-1" text="TThanh Studio" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; font-size: 180px; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -47,36 +47,17 @@ public class Movelocamotion : MonoBehaviour
 
     private void HandleMovement()
     {
-        // get input from keyboard
+        // Get input from keyboard
         Vector2 input = inputASWD.Data();
         animator.SetFloat("X", input.x);
         animator.SetFloat("Y", input.y);
         animator.SetBool("Aiming", input.x!=0 || input.y < 0);
 
-        
-            
-
-        
-
-        // Get mouse position and calculate distance
-        var (success, mousePosition) = mousePositionProvider.GetMousePosition();
-        if (!success) return;
-
-        float distanceToMouse = Vector3.Distance(transform.position, mousePosition);
-        float targetSpeedMultiplier = input.y;
-
-        // Determine the speed based on input and proximity to the mouse position
-        if (distanceToMouse > stopDistance )
-        {
-            AdjustSpeed(targetSpeedMultiplier);
-        }
-        else
-        {
-            StopMovement();
-        }
+        if(input.y > 0) AdjustSpeed(input.y);
+        else StopMovement();
     }
 
-    // make smoother speed
+    // make smooth speed
     private void AdjustSpeed(float targetSpeedMultiplier)
     {
         float maxSpeed = targetSpeedMultiplier * targetSpeed;
@@ -84,6 +65,7 @@ public class Movelocamotion : MonoBehaviour
         animator.SetFloat("Speed", currentSpeed);
     }
 
+    // Make smooth stop moving
     private void StopMovement()
     {
         currentSpeed = Mathf.Lerp(currentSpeed, 0, accelerationRate * Time.deltaTime);
