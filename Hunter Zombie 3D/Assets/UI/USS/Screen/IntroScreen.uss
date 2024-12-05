@@ -1,0 +1,26 @@
+.Play_Intro--Button {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    font-size: 20px;
+    position: absolute;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.Play_Intro--Button:hover {
+    background-color: rgba(117, 123, 123, 0.32);
+    border-left-color: rgba(123, 112, 112, 0.55);
+    border-right-color: rgba(123, 112, 112, 0.55);
+    border-top-color: rgba(123, 112, 112, 0.55);
+    border-bottom-color: rgba(123, 112, 112, 0.55);
+}
+
+.Play_Intro--Button:active {
+    background-color: rgba(79, 70, 70, 0.24);
+    border-left-color: rgba(115, 108, 108, 0.37);
+    border-right-color: rgba(115, 108, 108, 0.37);
+    border-top-color: rgba(115, 108, 108, 0.37);
+    border-bottom-color: rgba(115, 108, 108, 0.37);
+}

@@ -1,8 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="Intro--Screen" src="project://database/Assets/UI/UXML/Screens/Intro--Screen.uxml?fileID=9197481963319205126&amp;guid=e5cad7ac534c7c94d8579f949fa7ec01&amp;type=3#Intro--Screen" />
     <ui:Template name="PlayScreen" src="project://database/Assets/UI/UXML/Screens/PlayScreen.uxml?fileID=9197481963319205126&amp;guid=7e9b61a675767714da7c001df854712c&amp;type=3#PlayScreen" />
-    <ui:VisualElement name="Background" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: resource(&apos;UI/Background_UI/Clarify/Background&apos;);">
+    <ui:Template name="Option--Screen" src="project://database/Assets/Option--Screen.uxml?fileID=9197481963319205126&amp;guid=54ee30ffa2c943e46994ef8f8f75c1b7&amp;type=3#Option--Screen" />
+    <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
+    <Style src="project://database/Assets/UI/USS/Screen/Option_Screen.uss?fileID=7433441132597879392&amp;guid=758996f98eaf4784ca9d5ec91faf4cfc&amp;type=3#Option_Screen" />
+    <ui:VisualElement name="Background" class="Pointer_Default" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: resource(&apos;UI/Background_UI/Clarify/Background&apos;);">
         <ui:Instance template="Intro--Screen" name="Intro--Screen" />
         <ui:Instance template="PlayScreen" name="PlayScreen" style="display: none;" />
+        <ui:Instance template="Option--Screen" name="Option--Screen" />
     </ui:VisualElement>
 </ui:UXML>

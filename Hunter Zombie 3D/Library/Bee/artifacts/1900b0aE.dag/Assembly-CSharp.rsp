@@ -422,6 +422,10 @@
 "Assets/Scripts/UI/Base/MenuScreen.cs"
 "Assets/Scripts/UI/Controller/UIController.cs"
 "Assets/Scripts/UI/Screen/IntroScreen.cs"
+"Assets/Scripts/UI/Screen/OptionScreen.cs"
+"Assets/Scripts/VFX/Audio/AudioBase.cs"
+"Assets/Scripts/VFX/Audio/AudioManager.cs"
+"Assets/Scripts/VFX/Audio/AudioTypeText.cs"
 "Assets/Scripts/VFX/UI/TypeOutScript.cs"
 -langversion:9.0
 

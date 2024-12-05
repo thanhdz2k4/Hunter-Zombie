@@ -4,83 +4,160 @@ using UnityEngine;
 
 public class TypeOutScript : MonoBehaviour
 {
-    public bool On = true;
-    public bool reset = false;
-    public string FinalText;
-    public float TotalTypeTime = -1f;
-    public float TypeRate;
-    private float LastTime;
-    public string RandomCharacter;
-    public float RandomCharacterChangeRate = 0.1f;
-    private float RandomCharacterTime;
-    private int i;
+    bool IsTyping = true;
 
-    public event Action<string> TextType;
+    public bool isTyping;
+    public bool ResetTyping = false;
 
-    private string RandomChar()
+    [SerializeField] private string[] conversationLines;
+    [SerializeField] private float totalTypeTime = 2f;
+    [SerializeField] private float randomCharChangeRate = 0.1f;
+    [SerializeField] private float timerDelayBetweenLines;
+    private float timer;
+    private int currentLineIndex = 0;
+    private int charIndex = 0;
+    private string currentLine;
+    private float typeRate;
+    private float lastTypeTime;
+    private string randomCharacter;
+    private float lastRandomCharTime;
+
+    public event Action<string> OnTextTyped;
+    public event Action OnConversationFinished;
+
+    private void Start()
     {
-        byte value = (byte)UnityEngine.Random.Range(41f, 128f);
-        return Encoding.ASCII.GetString(new byte[] { value });
+        if (conversationLines.Length > 0)
+        {
+            currentLine = conversationLines[currentLineIndex];
+            typeRate = totalTypeTime / currentLine.Length;
+        }
     }
 
-    public string Skip()
+    public void SetData(string[] data) 
     {
-        On = false;
-        return FinalText;
+        this.conversationLines = data;
     }
 
     private void Update()
     {
-        HandleText();
+        if (IsTyping)
+        {
+            TypeLine();
+        }
     }
 
-    private void HandleText()
+    private void TypeLine()
     {
-        if (TotalTypeTime != -1f)
+        if (currentLine == null || currentLine.Length == 0) return;
+
+        if (Time.time - lastRandomCharTime >= randomCharChangeRate)
         {
-            TypeRate = TotalTypeTime / (float)FinalText.Length;
+            isTyping = true;
+            randomCharacter = GetRandomCharacter();
+            lastRandomCharTime = Time.time;
         }
 
-        if (On)
+        if (charIndex < currentLine.Length)
         {
-            // Update random character periodically
-            if (Time.time - RandomCharacterTime >= RandomCharacterChangeRate)
+            if (Time.time - lastTypeTime >= typeRate)
             {
-                RandomCharacter = RandomChar();
-                RandomCharacterTime = Time.time;
+                charIndex++;
+                lastTypeTime = Time.time;
             }
 
-            // Build and display text
-            if (i < FinalText.Length)
+            string displayText = currentLine.Substring(0, charIndex);
+
+            if (charIndex < currentLine.Length)
             {
-                TextType?.Invoke(FinalText.Substring(0, i) + RandomCharacter);
+                displayText += randomCharacter;
+            }
 
-                if (Time.time - LastTime >= TypeRate)
-                {
-                    i++;
-                    LastTime = Time.time;
-                }
+            OnTextTyped?.Invoke(displayText);
 
-                // Skip spaces
-                while (i < FinalText.Length && FinalText[i] == ' ')
-                {
-                    i++;
-                }
+            while (charIndex < currentLine.Length && currentLine[charIndex] == ' ')
+            {
+                charIndex++;
+            }
+        }
+        else
+        {
+        timer += Time.deltaTime;
+        isTyping = false;
+        if (timer >= timerDelayBetweenLines) {
+            timer = 0;
+            IsTyping = false;
+            OnTextTyped?.Invoke(currentLine);
+            currentLineIndex++;
+            if (currentLineIndex < conversationLines.Length)
+            {
+                PrepareNextLine();
             }
             else
             {
-                On = false;
-                TextType?.Invoke(FinalText);
+                OnConversationFinished?.Invoke();
             }
 
-            // Handle reset
-            if (reset)
-            {
-                TextType?.Invoke("");
-                i = 0;
-                reset = false;
-                On = true;
-            }
+        }
+        
+        }
+        if (ResetTyping)
+        {  
+            ResetConversation();
+        }
+    }
+
+    private void Delay()
+    {
+    
+    }
+
+    private void PrepareNextLine()
+    {
+        charIndex = 0;
+        IsTyping = true;
+        isTyping = true;
+        currentLine = conversationLines[currentLineIndex];
+        typeRate = totalTypeTime / currentLine.Length;
+    }
+
+    private string GetRandomCharacter()
+    {
+        byte value = (byte)UnityEngine.Random.Range(41, 128);
+        return Encoding.ASCII.GetString(new byte[] { value });
+    }
+
+    public void SetConversationLines(string[] lines)
+    {
+        conversationLines = lines;
+        ResetConversation();
+    }
+
+    private void ResetConversation()
+    {
+        currentLineIndex = 0;
+        charIndex = 0;
+        IsTyping = true;
+        ResetTyping = false;
+        if (conversationLines.Length > 0)
+        {
+            currentLine = conversationLines[currentLineIndex];
+            typeRate = totalTypeTime / currentLine.Length;
+        }
+    }
+
+    public void SkipCurrentLine()
+    {
+        IsTyping = false;
+        OnTextTyped?.Invoke(currentLine);
+        currentLineIndex++;
+        if (currentLineIndex < conversationLines.Length)
+        {
+            PrepareNextLine();
+        }
+        else
+        {
+            OnConversationFinished?.Invoke();
         }
     }
 }

@@ -1,0 +1,73 @@
+.Play_Option--Button {
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    flex-basis: 170px;
+}
+
+.Play_Option--Label_Select {
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    left: 200px;
+    -unity-text-align: middle-left;
+}
+
+.Play_Option--Label {
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 34px;
+    -unity-text-align: middle-left;
+    height: 100%;
+    left: 200px;
+}
+
+.Play_Option--Label:hover {
+    color: rgb(255, 255, 255);
+    rotate: 0;
+}
+
+.Chapter_Unselect--Button {
+    font-size: 33px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    height: 110px;
+}
+
+.Chapter_Select--Button {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    height: 110px;
+}
+
+.Chapter_Unselect--Button:hover {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    color: rgb(255, 255, 255);
+    rotate: 0;
+    font-size: 35px;
+}
