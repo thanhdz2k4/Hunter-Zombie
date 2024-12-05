@@ -1,7 +1,10 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
+    <Style src="project://database/Assets/UI/USS/Screen/IntroScreen.uss?fileID=7433441132597879392&amp;guid=a9bbff29c6b0da548876984bb5098212&amp;type=3#IntroScreen" />
     <ui:VisualElement name="Intro--Screen" style="flex-grow: 1;">
         <ui:VisualElement name="Title--Container" style="flex-grow: 0; left: 100px; right: 100px; flex-shrink: 0; height: 396px; position: absolute; top: 300px;">
-            <ui:Label tabindex="-1" text="TThanh Studio" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; font-size: 180px; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title_Intro--Label" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; font-size: 180px; -unity-text-align: upper-center; color: rgb(255, 255, 255);" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play_Intro--Button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

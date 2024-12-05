@@ -1,100 +1,86 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Text;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TypeOutScript : MonoBehaviour
 {
     public bool On = true;
     public bool reset = false;
-    public String FinalText;
+    public string FinalText;
     public float TotalTypeTime = -1f;
     public float TypeRate;
     private float LastTime;
-    public string RandomCharactor;
-    public float RandomCharaterChangeRate = 0.1f;
+    public string RandomCharacter;
+    public float RandomCharacterChangeRate = 0.1f;
     private float RandomCharacterTime;
     private int i;
 
     public event Action<string> TextType;
 
-    private string RandomChar() 
+    private string RandomChar()
     {
-        byte value = (byte) UnityEngine.Random.Range(41f, 128f);
-        string c = Encoding.ASCII.GetString(new byte[] {value});
-        return c;
+        byte value = (byte)UnityEngine.Random.Range(41f, 128f);
+        return Encoding.ASCII.GetString(new byte[] { value });
     }
 
-    public string Skip() 
+    public string Skip()
     {
         On = false;
-        return FinalText;       
+        return FinalText;
     }
 
-    void HandleText() 
+    private void Update()
     {
-        if(TotalTypeTime != -1f) 
+        HandleText();
+    }
+
+    private void HandleText()
+    {
+        if (TotalTypeTime != -1f)
         {
-            TypeRate = TotalTypeTime/(float)FinalText.Length;
+            TypeRate = TotalTypeTime / (float)FinalText.Length;
         }
 
-        if(On) 
+        if (On)
         {
-            if(Time.time - RandomCharacterTime >= RandomCharaterChangeRate) 
+            // Update random character periodically
+            if (Time.time - RandomCharacterTime >= RandomCharacterChangeRate)
             {
-                RandomCharactor = RandomChar();
+                RandomCharacter = RandomChar();
                 RandomCharacterTime = Time.time;
             }
 
-            try 
+            // Build and display text
+            if (i < FinalText.Length)
             {
-                TextType?.Invoke(FinalText.Substring(0, i) + RandomCharactor);
+                TextType?.Invoke(FinalText.Substring(0, i) + RandomCharacter);
+
+                if (Time.time - LastTime >= TypeRate)
+                {
+                    i++;
+                    LastTime = Time.time;
+                }
+
+                // Skip spaces
+                while (i < FinalText.Length && FinalText[i] == ' ')
+                {
+                    i++;
+                }
             }
-            catch(ArgumentOutOfRangeException)
+            else
             {
                 On = false;
+                TextType?.Invoke(FinalText);
             }
 
-            if(Time.time - LastTime >= TypeRate) 
+            // Handle reset
+            if (reset)
             {
-                i++;
-                LastTime = Time.time;
-            }
-            bool isChar = false;
-
-            while(!isChar) 
-            {
-                if((i+1) < FinalText.Length) 
-                {
-                    if(FinalText.Substring(i, 1) == " ") 
-                    {
-                        i++;
-                    }
-                    else
-                    {
-                        isChar = false;
-                    }
-                }
-                else
-                {
-                    isChar = true;
-                }
-            }
-
-            if(reset == true)
-            {
-                 TextType?.Invoke("");
+                TextType?.Invoke("");
                 i = 0;
                 reset = false;
+                On = true;
             }
-
-
-
         }
-
     }
-
-
 }
