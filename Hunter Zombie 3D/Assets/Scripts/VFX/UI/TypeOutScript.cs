@@ -43,7 +43,6 @@ public class TypeOutScript : MonoBehaviour
     {
         if (IsTyping)
         {
-            Debug.Log("Typing is active.");
             TypeLine();
         }
     }

@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="PlayScreen" style="flex-grow: 1; position: absolute; height: 100%; width: 100%;">
-        <ui:VisualElement name="Map_Camera--VisualElement" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/TextureRenderer/SubCamera.renderTexture?fileID=8400000&amp;guid=7a34fc12978e66c4990fc7d2925767f5&amp;type=2#SubCamera&apos;); position: absolute; height: 389px; width: 438px; top: 683px; left: -5px; border-top-left-radius: 190px; border-top-right-radius: 190px; border-bottom-right-radius: 190px; border-bottom-left-radius: 190px;" />
+    <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
+    <ui:VisualElement name="PlayScreen" class="Pointer_Default" style="flex-grow: 1; position: absolute; height: 100%; width: 100%;">
+        <ui:VisualElement name="Map_Camera--VisualElement" class="Pointer_Default" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/TextureRenderer/SubCamera.renderTexture?fileID=8400000&amp;guid=7a34fc12978e66c4990fc7d2925767f5&amp;type=2#SubCamera&apos;); position: absolute; height: 389px; width: 438px; top: 683px; left: -5px; border-top-left-radius: 190px; border-top-right-radius: 190px; border-bottom-right-radius: 190px; border-bottom-left-radius: 190px;" />
     </ui:VisualElement>
 </ui:UXML>

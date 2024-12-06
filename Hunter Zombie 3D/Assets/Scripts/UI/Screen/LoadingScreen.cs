@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.MPE;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,8 +10,11 @@ public class LoadingScreen : MenuScreen
 {
     [SerializeField] string id_Loading__Label;
     [SerializeField] TypeOutScript typeOutScript;
+    [SerializeField] AudioManager audioManager;
 
-    Label m_Loading__Label;
+    [SerializeField]Label m_Loading__Label;
+
+    private bool isShow;
 
     protected override void SetVisualElements()
     {
@@ -25,6 +29,18 @@ public class LoadingScreen : MenuScreen
         typeOutScript.OnConversationFinished += EndTypeEffect;
     }
 
+    public override void ShowScreen()
+    {
+        base.ShowScreen();
+        isShow = true;
+    }
+
+    public override void HideScreen()
+    {
+        base.HideScreen();
+        isShow = false;
+    }
+
     private void EndTypeEffect()
     {
         
@@ -32,19 +48,18 @@ public class LoadingScreen : MenuScreen
 
     private void Update() 
     {
-        AudioEffect();
-
+        if(isShow) AudioEffect();
     }
 
     private void AudioEffect()
     {
         if (typeOutScript.isHasAudio)
         {
-            AudioManager.instance.PlayTextTypeAudio();
+            audioManager.PlayTextTypeAudio();
         }
         else
         {
-            AudioManager.instance.PlayTextTypeAudio();
+            audioManager.PauTextTypeAudio();
         }
     }
 
@@ -58,5 +73,6 @@ public class LoadingScreen : MenuScreen
 
     public void TriggerTypeScreen() {
         this.typeOutScript.IsTyping = true;
+        this.typeOutScript.isHasAudio = true;
     }
 }
