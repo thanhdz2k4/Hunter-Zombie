@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {
-      "Assembly-CSharp/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Assembly-CSharp.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Assembly-CSharp.dll": {}
-        }
-      }
-    }
+    ".NETStandard,Version=v2.1": {}
   },
-  "libraries": {
-    "Assembly-CSharp/1.0.0": {
-      "type": "project",
-      "path": "Assembly-CSharp.csproj",
-      "msbuildProject": "Assembly-CSharp.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": [
-      "Assembly-CSharp >= 1.0.0"
-    ]
+    ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
     "C:\\Users\\admin\\.nuget\\packages\\": {}
@@ -32,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
-      "projectName": "Assembly-CSharp-Editor",
-      "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp-Editor.csproj",
+      "projectUniqueName": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\obj\\",
       "projectStyle": "PackageReference",
@@ -53,11 +34,7 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {
-            "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj": {
-              "projectPath": "E:\\Githup Project\\Hunter-Zombie\\Hunter Zombie 3D\\Assembly-CSharp.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
