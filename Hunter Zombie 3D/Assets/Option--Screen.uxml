@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/USS/Screen/Option_Screen.uss?fileID=7433441132597879392&amp;guid=758996f98eaf4784ca9d5ec91faf4cfc&amp;type=3#Option_Screen" />
-    <ui:VisualElement name="Option--Screen" style="flex-grow: 1; position: absolute; width: 100%; height: 100%;">
+    <ui:VisualElement name="Option--Screen" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; top: 50px;">
         <ui:VisualElement name="Option--Container" style="flex-grow: 1; position: absolute; height: 720px; width: 696px; top: 192px; left: 76px;">
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play_Option--Button" class="Play_Option--Button" style="background-image: resource(&apos;UI/ButtonUI/button_fix&apos;);">
                 <ui:Label tabindex="-1" text="play                                  1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Play_Option--Label" class="Play_Option--Label_Select" />
@@ -13,18 +13,18 @@
             </ui:Button>
             <ui:VisualElement name="menu__current-marker" style="flex-grow: 1; position: absolute; left: 91px; top: 34px; width: 426px; height: 101px; background-image: resource(&apos;UI/ButtonUI/button_active&apos;);" />
         </ui:VisualElement>
-        <ui:VisualElement name="Chapter--Container" style="flex-grow: 1; position: absolute; height: 555px; width: 773px; top: 225px; left: 865px; flex-direction: row; display: none;">
-            <ui:VisualElement style="flex-grow: 0; width: 500px;">
+        <ui:VisualElement name="Chapter--Container" style="flex-grow: 1; position: absolute; height: 551px; width: 955px; top: 225px; left: 865px; flex-direction: row; display: flex;">
+            <ui:VisualElement style="flex-grow: 0; width: 413px; position: absolute; height: 200px;">
                 <ui:Button text="Chapter 1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Chapter1_Option--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
                 <ui:Button text="Chapter 2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Chapter2_Option--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
                 <ui:Button text="Chapter 3" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Chapter3_Option--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
                 <ui:Button text="Chapter 4" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Chapter4_Option--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
             </ui:VisualElement>
-            <ui:VisualElement style="flex-grow: 1;">
-                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
+            <ui:VisualElement style="flex-grow: 1; position: absolute; height: 501px; width: 369px; top: auto; left: auto; right: 90px;">
+                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Join_Chapter--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="Opinion--Container" style="flex-grow: 1; position: absolute; height: 555px; width: 773px; top: 225px; left: 865px; flex-direction: row; display: flex;">
+        <ui:VisualElement name="Opinion--Container" style="flex-grow: 1; position: absolute; height: 555px; width: 773px; top: 225px; left: 865px; flex-direction: row; display: none;">
             <ui:VisualElement style="flex-grow: 0; width: 500px;">
                 <ui:Button text="Facebook" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Facebook--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />
                 <ui:Button text="Youtube" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Youtube--Button" class="Chapter_Unselect--Button" style="-unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial;" />

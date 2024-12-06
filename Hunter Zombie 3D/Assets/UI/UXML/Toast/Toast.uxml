@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Toast" style="flex-grow: 1; position: absolute; width: 100%; height: 100px; background-color: rgba(156, 164, 155, 0.5);">
+        <ui:Label tabindex="-1" text="not unlocked to enter" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Toast__Label" style="width: 100%; height: 100%; -unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); font-size: 45px;" />
+    </ui:VisualElement>
+</ui:UXML>

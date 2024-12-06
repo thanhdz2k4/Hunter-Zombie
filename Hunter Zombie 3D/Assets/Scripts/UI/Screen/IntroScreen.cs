@@ -9,7 +9,6 @@ public class IntroScreen : MenuScreen
     [SerializeField] private string id_Intro_Title__Label;
     [SerializeField] private string id_Intro_Play__Button;
     [SerializeField] private TypeOutScript typeOutScript;
-    [SerializeField] private string[] title;
     private Label m_Intro_Title__Label;
     private Button m_Intro_Play__Button;
 
@@ -31,6 +30,12 @@ public class IntroScreen : MenuScreen
         base.RegisterButtonCallBacks();
         typeOutScript.OnTextTyped += HandleTypeEffect;
         typeOutScript.OnConversationFinished += EndTypeEffect;
+        m_Intro_Play__Button.RegisterCallback<ClickEvent>(ShowOptionScreen);
+    }
+
+    private void ShowOptionScreen(ClickEvent evt)
+    {
+        m_UIController.ShowOptionScreen();
     }
 
     private void EndTypeEffect()
@@ -40,13 +45,13 @@ public class IntroScreen : MenuScreen
 
     private void AudioEffect()
     {
-        if (typeOutScript.isTyping)
+        if (typeOutScript.isHasAudio)
         {
-            AudioBase.instance.PlayAudio();
+            AudioManager.instance.PlayTextTypeAudio();
         }
         else
         {
-            AudioBase.instance.PauseAudio();
+             AudioManager.instance.PauTextTypeAudio();
         }
     }
 

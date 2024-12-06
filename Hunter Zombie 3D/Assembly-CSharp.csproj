@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Interface\IInput.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\LoadingScreen.cs" />
     <Compile Include="Assets\Scripts\VFX\UI\TypeOutScript.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\OptionScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BloomModel.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\Scripts\UI\Toast\Toast.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
@@ -126,6 +128,7 @@
   <ItemGroup>
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\GrainGen.shader" />
+    <None Include="Assets\UI\UXML\Toast\Toast.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA3.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
@@ -160,6 +163,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\UI\UXML\Screens\Loading--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\Trackball.shader" />

@@ -25,6 +25,7 @@ public class OptionScreen : MenuScreen
     [SerializeField] string id_ItchIO__Button;
     [SerializeField] string id_Email__Button;
     [SerializeField] string id_Quit__Button;
+    [SerializeField] string id_Join_Chapter__Button;
 
     [Header("ID LABELS")]
     [SerializeField] string id_Play__Label;
@@ -50,13 +51,18 @@ public class OptionScreen : MenuScreen
      [SerializeField] string id_Select_Chapter_Button__USS;
     [SerializeField] string id_Unselect_Chapter_Button__USS;
 
+    [Header("BACKGROUND")]
+    [SerializeField] String id_Background__Visualt;
+
     [Header("CHAPTER IMAGE")]
     [SerializeField] Texture2D Chapter_1_Image;
     [SerializeField] Texture2D Chapter_2_Image;
     [SerializeField] Texture2D Chapter_3_Image;
     [SerializeField] Texture2D Chapter_4_Image;
+    
+    [SerializeField] Toast toast;
 
-
+    VisualElement m_Background__Visual;
     VisualElement m_Chapter__Container;
     VisualElement m_Opinion__Container;
     VisualElement m_Exit__Container;
@@ -75,6 +81,8 @@ public class OptionScreen : MenuScreen
     Button m_Chapter_2__Button;
     Button m_Chapter_3__Button;
     Button m_Chapter_4__Button;
+
+    Button m_Join_Chapter__Button;
 
     Button m_Facebook__Button;
     Button m_Youtube__Button;
@@ -125,7 +133,11 @@ public class OptionScreen : MenuScreen
         m_ItchIO__Button = m_Root.Q<Button>(id_ItchIO__Button);
         m_Email__Button = m_Root.Q<Button>(id_Email__Button);
 
+        m_Join_Chapter__Button = m_Root.Q<Button>(id_Join_Chapter__Button);
+
         m_Quit__Button = m_Root.Q<Button>(id_Quit__Button);
+
+        m_Background__Visual = m_Root.Q<VisualElement>(id_Background__Visualt);
 
     }
 
@@ -142,14 +154,28 @@ public class OptionScreen : MenuScreen
         m_Chapter_3__Button.RegisterCallback<ClickEvent>(ShowChapter3) ;
         m_Chapter_4__Button.RegisterCallback<ClickEvent>(ShowChapter4) ;
 
-        // m_Facebook__Button.RegisterCallback<ClickEvent>(ShowFacebook) ;
-        // m_Youtube__Button.RegisterCallback<ClickEvent>(ShowYoutube) ;
-        // m_ItchIO__Button.RegisterCallback<ClickEvent>(ShowItchIO) ;
-        // m_Email__Button.RegisterCallback<ClickEvent>(ShowEmail) ;
+        m_Facebook__Button.RegisterCallback<ClickEvent>(evt => OpenURL(id_Facebook__Link));
+        m_Youtube__Button.RegisterCallback<ClickEvent>(evt => OpenURL(id_Youtube__Link));
+        m_ItchIO__Button.RegisterCallback<ClickEvent>(evt => OpenURL(id_ItchIO__Link));
+        m_Email__Button.RegisterCallback<ClickEvent>(evt => OpenURL(id_Email__Link));
 
-        // m_Quit__Button.RegisterCallback<ClickEvent>(ExitGame) ;
+        m_Join_Chapter__Button.RegisterCallback<ClickEvent>(JoinChapter);
+
+        m_Quit__Button.RegisterCallback<ClickEvent>(ExitGame) ;
 
        
+    }
+
+    private void JoinChapter(ClickEvent evt)
+    {
+        if(m_Join_Chapter__Button.text == "Lock") toast.SetToast("NOT UNLOCKED TO JOIN");
+        else m_UIController.ShowLoadingScreen();
+    
+    }
+
+    private void OpenURL(string URL)
+    {
+        Application.OpenURL(URL);
     }
 
     private void GeometryChangedEventHandler(GeometryChangedEvent evt)
@@ -213,47 +239,40 @@ public class OptionScreen : MenuScreen
 
     private void ExitGame(ClickEvent evt)
     {
-        throw new NotImplementedException();
-    }
-
-    private void ShowEmail(ClickEvent evt)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void ShowItchIO(ClickEvent evt)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void ShowYoutube(ClickEvent evt)
-    {
-        throw new NotImplementedException();
-    }
-
-    private void ShowFacebook(ClickEvent evt)
-    {
-        throw new NotImplementedException();
+        Application.Quit();
     }
 
     private void ShowChapter4(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        ChangePosition(m_Join_Chapter__Button, 342);
+        m_Join_Chapter__Button.text = "Lock";
+        HighLighElement(m_Chapter_4__Button,id_Unselect_Chapter_Button__USS , id_Select_Chapter_Button__USS, m_Root);
+        m_Background__Visual.style.backgroundImage = Chapter_4_Image;
     }
 
     private void ShowChapter3(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        ChangePosition(m_Join_Chapter__Button, 231);
+         m_Join_Chapter__Button.text = "Lock";
+        HighLighElement(m_Chapter_3__Button,id_Unselect_Chapter_Button__USS , id_Select_Chapter_Button__USS, m_Root);
+        m_Background__Visual.style.backgroundImage = Chapter_3_Image;
     }
 
     private void ShowChapter2(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        ChangePosition(m_Join_Chapter__Button, 118);
+        m_Join_Chapter__Button.text = "Lock";
+        HighLighElement(m_Chapter_2__Button,id_Unselect_Chapter_Button__USS , id_Select_Chapter_Button__USS, m_Root);
+        m_Background__Visual.style.backgroundImage = Chapter_2_Image;
+        
     }
 
     private void ShowChapter1(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        ChangePosition(m_Join_Chapter__Button, 2);
+         m_Join_Chapter__Button.text = "Play";
+        HighLighElement(m_Chapter_1__Button,id_Unselect_Chapter_Button__USS , id_Select_Chapter_Button__USS, m_Root);
+        m_Background__Visual.style.backgroundImage = Chapter_1_Image;
     }
 
     private void ShowExitPanel(ClickEvent evt)
@@ -275,5 +294,11 @@ public class OptionScreen : MenuScreen
         HighLighElement(m_Play__Label, id_Unselect_Label__USS, id_Select_Label__USS, m_Root);
         ClickMarker(evt);
         ShowPanel(m_Chapter__Container, Pannels);
+    }
+
+    private void ChangePosition(VisualElement element, int marginTop) 
+    {
+        element.style.marginTop = marginTop;
+
     }
 }

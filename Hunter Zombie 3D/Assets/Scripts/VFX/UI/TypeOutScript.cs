@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TypeOutScript : MonoBehaviour
 {
-    bool IsTyping = true;
+    public bool IsTyping = true;
 
-    public bool isTyping;
+    public bool isHasAudio;
     public bool ResetTyping = false;
 
     [SerializeField] private string[] conversationLines;
@@ -43,6 +43,7 @@ public class TypeOutScript : MonoBehaviour
     {
         if (IsTyping)
         {
+            Debug.Log("Typing is active.");
             TypeLine();
         }
     }
@@ -53,7 +54,7 @@ public class TypeOutScript : MonoBehaviour
 
         if (Time.time - lastRandomCharTime >= randomCharChangeRate)
         {
-            isTyping = true;
+            isHasAudio = true;
             randomCharacter = GetRandomCharacter();
             lastRandomCharTime = Time.time;
         }
@@ -83,7 +84,7 @@ public class TypeOutScript : MonoBehaviour
         else
         {
         timer += Time.deltaTime;
-        isTyping = false;
+        isHasAudio = false;
         if (timer >= timerDelayBetweenLines) {
             timer = 0;
             IsTyping = false;
@@ -107,16 +108,11 @@ public class TypeOutScript : MonoBehaviour
         }
     }
 
-    private void Delay()
-    {
-    
-    }
-
     private void PrepareNextLine()
     {
         charIndex = 0;
         IsTyping = true;
-        isTyping = true;
+        isHasAudio = true;
         currentLine = conversationLines[currentLineIndex];
         typeRate = totalTypeTime / currentLine.Length;
     }
