@@ -1,0 +1,30 @@
+.Exit_Purchase--Button:hover {
+    -unity-background-image-tint-color: rgb(135, 26, 46);
+}
+
+.Buy_Cash--Button:hover {
+    opacity: 1;
+}
+
+.Buy_Cash--Button {
+    opacity: 0;
+}
+
+.Exit_Purchase--Button {
+    -unity-background-image-tint-color: rgb(44, 110, 234);
+}
+
+.Accept_Purchase--Button:hover {
+    color: rgb(255, 233, 0);
+}
+
+.Accept_Purchase--Button {
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    color: rgb(0, 255, 20);
+    font-size: 71px;
+}
+
+.Accept_Purchase--Button:active {
+    color: rgb(255, 194, 0);
+}
