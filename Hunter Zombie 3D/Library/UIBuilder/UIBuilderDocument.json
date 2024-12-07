@@ -47,20 +47,22 @@
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "instanceID": 0
+                    "fileID": 7433441132597879392,
+                    "guid": "c980d52e24a01c94797be95de3ba1cfc",
+                    "type": 3
                 },
                 "m_Settings": {
                     "UxmlGuid": "6c8842411bc5e734b97ad0c6b7c652bc",
                     "UxmlPath": "Assets/UI/UXML/Screens/PlayGame_Screen.uxml",
                     "CanvasX": 60,
-                    "CanvasY": 0,
+                    "CanvasY": 4,
                     "CanvasWidth": 1920,
-                    "CanvasHeight": 1080,
-                    "MatchGameView": true,
-                    "ZoomScale": 0.30000001192092898,
+                    "CanvasHeight": 1076,
+                    "MatchGameView": false,
+                    "ZoomScale": 0.5,
                     "PanOffset": {
-                        "x": -156.23855590820313,
-                        "y": 172.76446533203126
+                        "x": 195.98703002929688,
+                        "y": -79.91177368164063
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
