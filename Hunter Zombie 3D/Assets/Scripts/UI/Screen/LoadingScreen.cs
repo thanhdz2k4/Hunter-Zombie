@@ -11,7 +11,6 @@ public class LoadingScreen : MenuScreen
     [SerializeField] string id_Loading__Label;
     [SerializeField] TypeOutScript typeOutScript;
     [SerializeField] AudioManager audioManager;
-
     [SerializeField]Label m_Loading__Label;
 
     private bool isShow;
@@ -33,6 +32,8 @@ public class LoadingScreen : MenuScreen
     {
         base.ShowScreen();
         isShow = true;
+        this.typeOutScript.IsTyping = true;
+        this.typeOutScript.isHasAudio = true;
     }
 
     public override void HideScreen()
@@ -43,7 +44,9 @@ public class LoadingScreen : MenuScreen
 
     private void EndTypeEffect()
     {
-        
+        m_UIController.ShowMainScreen();
+        m_UIController.ShowToolbar();
+        m_UIController.ShowInforPlayPanel();
     }
 
     private void Update() 
@@ -71,8 +74,5 @@ public class LoadingScreen : MenuScreen
         }
     }
 
-    public void TriggerTypeScreen() {
-        this.typeOutScript.IsTyping = true;
-        this.typeOutScript.isHasAudio = true;
-    }
+   
 }

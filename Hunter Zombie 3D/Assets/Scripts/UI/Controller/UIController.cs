@@ -8,14 +8,20 @@ public class UIController : MonoBehaviour
     [SerializeField] IntroScreen Intro_Screen;
     [SerializeField] OptionScreen option_Screen;
     [SerializeField] LoadingScreen loading_Screen;
+    [SerializeField] MainScreen main_Screen;
 
-    List<MenuScreen> menuScreens = new List<MenuScreen>();
+    [Header("TOOLBAR")]
+    [SerializeField] Toolbar toolbar;
+    [SerializeField] InforPlayer inforPlayer;
+
+    List<MenuScreen> listOfScreens = new List<MenuScreen>();
     // Start is called before the first frame update
     void Start()
     {
-        if(Intro_Screen != null) menuScreens.Add(Intro_Screen);;
-        if(option_Screen != null) menuScreens.Add(option_Screen);
-        if(loading_Screen != null) menuScreens.Add(loading_Screen);
+        if(Intro_Screen != null) listOfScreens.Add(Intro_Screen);;
+        if(option_Screen != null) listOfScreens.Add(option_Screen);
+        if(loading_Screen != null) listOfScreens.Add(loading_Screen);
+        if(main_Screen != null) listOfScreens.Add(main_Screen);
 
         ShowIntroGame();
          
@@ -23,18 +29,32 @@ public class UIController : MonoBehaviour
 
     public void ShowIntroGame() 
     {
-        ShowModalScreen(Intro_Screen, menuScreens);
+        ShowModalScreen(Intro_Screen, listOfScreens);
     }
 
     public void ShowOptionScreen()
     {
-        ShowModalScreen(option_Screen, menuScreens);
+        ShowModalScreen(option_Screen, listOfScreens);
     }
 
     public void ShowLoadingScreen()
     {
-        ShowModalScreen(loading_Screen, menuScreens);
-        loading_Screen.TriggerTypeScreen();
+        ShowModalScreen(loading_Screen, listOfScreens);
+    }
+
+    public void ShowMainScreen()
+    {
+        ShowModalScreen(main_Screen, listOfScreens);
+    }
+
+    public void ShowToolbar()
+    {
+        toolbar.ShowScreen();
+    }
+
+    public void ShowInforPlayPanel()
+    {
+        inforPlayer.ShowScreen();
     }
 
     

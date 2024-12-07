@@ -1,7 +1,7 @@
-.Pointer_Default {
-    cursor: resource('UI/Pointer/icons8-select-cursor-48');
-}
-
 .Pointer_Press {
     cursor: resource('UI/Pointer/icons8-finger-up-48');
+}
+
+.Pointer_Default {
+    cursor: resource('UI/Pointer/icons8-select-cursor-48');
 }

@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
+    <ui:VisualElement name="Infor_Player--Container" class="Pointer_Default" style="flex-grow: 0; position: absolute; height: 92px; width: 634px; background-image: none; flex-direction: row; top: 20px; left: 20px;">
+        <ui:VisualElement class="Pointer_Default" style="flex-grow: 0; width: 145px; background-image: none; -unity-background-scale-mode: stretch-to-fill; height: 127px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; -unity-background-image-tint-color: rgb(255, 255, 255);">
+            <ui:VisualElement name="Avatar" class="Pointer_Default" style="flex-grow: 0; background-image: resource(&apos;UI/Avatar/ruben-perez-gonzalez-icon2&apos;); -unity-background-scale-mode: scale-to-fit; border-bottom-right-radius: 0; border-bottom-left-radius: 0; width: 136px; margin-top: 0; margin-left: 5px; display: flex; height: 124px; left: 0; top: 0; -unity-background-image-tint-color: rgb(255, 255, 255); border-top-left-radius: 0; border-top-right-radius: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="VisualElement" class="Pointer_Default" style="flex-grow: 0; background-image: none; width: 392px; margin-top: 0; top: 10px; height: 104px;">
+            <ui:VisualElement name="VisualElement" class="Pointer_Default" style="flex-grow: 1; width: 391px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; height: 109px; right: auto; left: 20px;">
+                <ui:Label tabindex="-1" text="Online" parse-escape-sequences="true" display-tooltip-when-elided="true" name="State" class="Pointer_Default" style="color: rgb(0, 255, 11); -unity-font-style: normal; -unity-text-align: middle-left; margin-left: 20px; height: 20px; margin-bottom: 0; margin-top: 10px;" />
+                <ui:Label tabindex="-1" text="StormR4ider" parse-escape-sequences="true" display-tooltip-when-elided="true" name="NameOfPlayer" class="Pointer_Default" style="margin-left: 20px; -unity-font-style: bold; color: rgb(255, 255, 255); font-size: 32px; -unity-text-align: middle-left; margin-top: 0; margin-bottom: 0;" />
+                <ui:VisualElement name="Exp_Infor--Container" class="Pointer_Default" style="flex-grow: 0; background-color: rgb(0, 0, 0); flex-direction: row; height: 5px; flex-shrink: 0; width: 356px; left: 20px; top: 10px;">
+                    <ui:VisualElement name="Exp_Infor" class="Pointer_Default" style="flex-grow: 0; width: 92px; background-color: rgb(197, 102, 22);" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="800 / 2000" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Exp--Label" class="Pointer_Default" style="margin-left: 20px; -unity-font-style: normal; color: rgb(255, 255, 255); font-size: 15px; -unity-text-align: middle-right; margin-top: 0; margin-bottom: 0; position: absolute; top: 52px; left: 202px; width: 151px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
