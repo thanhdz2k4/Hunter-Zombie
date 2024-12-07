@@ -28,3 +28,13 @@
 .Accept_Purchase--Button:active {
     color: rgb(255, 194, 0);
 }
+
+.Back_Shop_Purchase--Button {
+    font-size: 39px;
+    color: rgb(255, 255, 255);
+}
+
+.Back_Shop_Purchase--Button:hover {
+    font-size: 40px;
+    color: rgb(171, 4, 4);
+}

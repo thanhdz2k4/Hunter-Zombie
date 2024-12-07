@@ -14,16 +14,30 @@ public class Toolbar : MenuScreen
 
     Button m_Add_Coin__Button, m_Shop__Button, m_Add_Friend__Button, m_Settings__Button;
 
-    protected override void SetVisualElements()
+     
+
+     protected override void SetVisualElements()
     {
         base.SetVisualElements();
+        m_Add_Coin__Button = m_Root.Q<Button>(id_Add_Coin__Button);
+        m_Shop__Button = m_Root.Q<Button>(id_Shop__Button);
+        m_Add_Friend__Button = m_Root.Q<Button>(id_Add_Friend__Button);
+        m_Settings__Button = m_Root.Q<Button>(id_Settings__Button);
+
+    }
+
+
+    protected override void RegisterButtonCallBacks()
+    {
+        base.RegisterButtonCallBacks();
+
         m_Add_Coin__Button.RegisterCallback<ClickEvent>(ShowAddCoinScreen);
         m_Shop__Button.RegisterCallback<ClickEvent>(ShowShopScreen);
         m_Add_Friend__Button.RegisterCallback<ClickEvent>(ShowAddFiendScreen);
         m_Settings__Button.RegisterCallback<ClickEvent>(ShowSettingsScreen);
-
     }
 
+    
     private void ShowSettingsScreen(ClickEvent evt)
     {
         throw new NotImplementedException();
@@ -41,6 +55,6 @@ public class Toolbar : MenuScreen
 
     private void ShowAddCoinScreen(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        m_UIController.ShowCashShowScreen();
     }
 }

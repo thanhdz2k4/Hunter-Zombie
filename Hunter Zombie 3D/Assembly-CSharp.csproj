@@ -104,6 +104,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\Scripts\Physics\PlayerDirection.cs" />
     <Compile Include="Assets\Scripts\VFX\Audio\AudioTypeText.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\ShopCashScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Scripts\Input\InputAWSD.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Scripts\Physics\Movelocamotion.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\MainToast.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\IntroScreen.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +151,7 @@
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorBark.shader" />
     <None Include="Assets\UI\USS\Base\Toolbar.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+    <None Include="Assets\UI\UXML\Screens\ShopCashScreen.uxml" />
     <None Include="Assets\UI\USS\Screen\Option_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\Intro--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
@@ -156,6 +159,7 @@
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeavesOptimized.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\UI\UXML\Screens\Toast_Main.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
     <None Include="Assets\UI\USS\Screen\Shop_Screen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ACES.cginc" />

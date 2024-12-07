@@ -9,6 +9,7 @@ public class UIController : MonoBehaviour
     [SerializeField] OptionScreen option_Screen;
     [SerializeField] LoadingScreen loading_Screen;
     [SerializeField] MainScreen main_Screen;
+    [SerializeField] ShopCashScreen cashShop_Screen;
 
     [Header("TOOLBAR")]
     [SerializeField] Toolbar toolbar;
@@ -22,9 +23,15 @@ public class UIController : MonoBehaviour
         if(option_Screen != null) listOfScreens.Add(option_Screen);
         if(loading_Screen != null) listOfScreens.Add(loading_Screen);
         if(main_Screen != null) listOfScreens.Add(main_Screen);
+        if(cashShop_Screen != null) listOfScreens.Add(cashShop_Screen);
 
         ShowIntroGame();
          
+    }
+
+    public void ShowCashShowScreen()
+    {
+        ShowModalScreen(cashShop_Screen, listOfScreens);
     }
 
     public void ShowIntroGame() 
