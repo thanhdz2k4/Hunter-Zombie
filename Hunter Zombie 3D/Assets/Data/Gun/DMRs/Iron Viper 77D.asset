@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Iron Viper 77D
+  m_EditorClassIdentifier: 
+  Type_Gun: 1
+  Rarity_Tiers: 2
+  Charge_Rate: 45.9
+  Impact: 50.5
+  Range: 53.1
+  Stability: 42.7
+  Reload: 47.9
+  Buttlet_Quantity: 45
+  Comsuming_Attack: 350
+  Name_Gun: Iron Viper 77D
+  Texture2D: {fileID: 0}
+  Description: The Iron Viper 77D is a rugged, semi-automatic DMR designed for durability
+    in extreme conditions. Its advanced ballistics software and adjustable firing
+    modes make it an adaptable weapon for marksmen in unpredictable combat scenarios.
+  Price: 3000000

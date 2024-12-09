@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Specter Forge L33T
+  m_EditorClassIdentifier: 
+  Type_Gun: 0
+  Rarity_Tiers: 2
+  Charge_Rate: 55.8
+  Impact: 59.7
+  Range: 59
+  Stability: 47.9
+  Reload: 46.6
+  Buttlet_Quantity: 120
+  Comsuming_Attack: 230
+  Name_Gun: Specter Forge L33T
+  Texture2D: {fileID: 0}
+  Description: "The Specter Forge L33T is a futuristic, dual-mode weapon capable
+    of transitioning between kinetic and energy rounds. Engineered with advanced
+    cooling systems and a cyberpunk aesthetic, it\u2019s a favorite among tech-savvy
+    fighters and mercenaries"
+  Price: 300000

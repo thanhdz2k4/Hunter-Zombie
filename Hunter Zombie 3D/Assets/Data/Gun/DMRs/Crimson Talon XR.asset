@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Crimson Talon XR
+  m_EditorClassIdentifier: 
+  Type_Gun: 1
+  Rarity_Tiers: 1
+  Charge_Rate: 27
+  Impact: 29.6
+  Range: 27.6
+  Stability: 31.5
+  Reload: 33.5
+  Buttlet_Quantity: 45
+  Comsuming_Attack: 302
+  Name_Gun: Crimson Talon XR
+  Texture2D: {fileID: 0}
+  Description: The Crimson Talon XR is a battle-tested DMR engineered for power and
+    precision. Its reinforced barrel and thermal imaging scope allow operators to
+    dominate in any environment, from dense urban landscapes to open deserts.
+  Price: 200000

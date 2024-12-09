@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Titan Edge 7A
+  m_EditorClassIdentifier: 
+  Type_Gun: 0
+  Rarity_Tiers: 4
+  Charge_Rate: 77.4
+  Impact: 69.5
+  Range: 67.5
+  Stability: 68.8
+  Reload: 67.5
+  Buttlet_Quantity: 210
+  Comsuming_Attack: 300
+  Name_Gun: Titan Edge 7A
+  Texture2D: {fileID: 0}
+  Description: The Titan Edge 7A is a versatile, mid-range assault rifle designed
+    for adaptability in any combat situation. With a robust titanium frame and modular
+    attachments, it balances power and precision, ensuring dominance across diverse
+    battlefields
+  Price: 6000000

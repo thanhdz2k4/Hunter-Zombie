@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Obsidian Razor ZR1
+  m_EditorClassIdentifier: 
+  Type_Gun: 0
+  Rarity_Tiers: 0
+  Charge_Rate: 26.3
+  Impact: 27
+  Range: 27.6
+  Stability: 30.9
+  Reload: 32.2
+  Buttlet_Quantity: 120
+  Comsuming_Attack: 210
+  Name_Gun: Obsidian Razor ZR1
+  Texture2D: {fileID: 0}
+  Description: The Obsidian Razor ZR1 is an ultra-stylish, precision-crafted sniper
+    rifle made from obsidian-infused alloys. With an extended range and unparalleled
+    accuracy, it excels in long-range eliminations, delivering lethal strikes from
+    the shadows.
+  Price: 200000

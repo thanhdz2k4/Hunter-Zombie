@@ -75,6 +75,7 @@
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Scripts\Input\MousePosition.cs" />
+    <Compile Include="Assets\Scripts\SO\PlayerSO.cs" />
     <Compile Include="Assets\Scripts\VFX\Audio\AudioManager.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\GrainModel.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Scripts\UI\Toast\Toast.cs" />
+    <Compile Include="Assets\Scripts\SO\GunSO.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
@@ -177,6 +179,7 @@
     <None Include="Assets\UI\UXML\Screens\Loading--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+    <None Include="Assets\UI\UXML\Template Item\Friend_Template.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\Trackball.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
     <None Include="Assets\Flooded_Grounds\Resources\WavingGrass.shader" />

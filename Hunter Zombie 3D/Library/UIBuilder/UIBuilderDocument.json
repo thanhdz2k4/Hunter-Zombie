@@ -87,15 +87,15 @@
                 "m_Settings": {
                     "UxmlGuid": "6c8842411bc5e734b97ad0c6b7c652bc",
                     "UxmlPath": "Assets/UI/UXML/Screens/PlayGame_Screen.uxml",
-                    "CanvasX": 60,
-                    "CanvasY": 4,
+                    "CanvasX": 28,
+                    "CanvasY": 0,
                     "CanvasWidth": 1920,
-                    "CanvasHeight": 1082,
-                    "MatchGameView": false,
-                    "ZoomScale": 0.4000000059604645,
+                    "CanvasHeight": 1080,
+                    "MatchGameView": true,
+                    "ZoomScale": 0.3499999940395355,
                     "PanOffset": {
-                        "x": 18.1785888671875,
-                        "y": 130.188232421875
+                        "x": -44.786956787109378,
+                        "y": 128.08056640625
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Plantom Lance 12DR
+  m_EditorClassIdentifier: 
+  Type_Gun: 1
+  Rarity_Tiers: 3
+  Charge_Rate: 49.9
+  Impact: 61
+  Range: 62.3
+  Stability: 60.3
+  Reload: 60.3
+  Buttlet_Quantity: 45
+  Comsuming_Attack: 390
+  Name_Gun: Phantom Lance 12DR
+  Texture2D: {fileID: 0}
+  Description: The Phantom Lance 12DR is a high-caliber designated marksman rifle
+    (DMR) built for sharpshooters seeking precision and versatility. Crafted with
+    aerospace-grade alloys and advanced optics, it excels in mid-to-long-range engagements,
+    delivering devastating shots with pinpoint accuracy.
+  Price: 4000000

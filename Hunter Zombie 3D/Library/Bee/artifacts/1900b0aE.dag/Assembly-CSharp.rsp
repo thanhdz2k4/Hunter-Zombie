@@ -420,6 +420,8 @@
 "Assets/Scripts/Physics/GravitiyLocamotion.cs"
 "Assets/Scripts/Physics/Movelocamotion.cs"
 "Assets/Scripts/Physics/PlayerDirection.cs"
+"Assets/Scripts/SO/GunSO.cs"
+"Assets/Scripts/SO/PlayerSO.cs"
 "Assets/Scripts/UI/Base/MenuScreen.cs"
 "Assets/Scripts/UI/Controller/UIController.cs"
 "Assets/Scripts/UI/Screen/InforPlayer.cs"

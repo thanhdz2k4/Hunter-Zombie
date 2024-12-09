@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Pulse Striker 20X
+  m_EditorClassIdentifier: 
+  Type_Gun: 0
+  Rarity_Tiers: 1
+  Charge_Rate: 44.6
+  Impact: 59
+  Range: 45.9
+  Stability: 39.4
+  Reload: 34.8
+  Buttlet_Quantity: 40
+  Comsuming_Attack: 230
+  Name_Gun: Pulse Striker 20X
+  Texture2D: {fileID: 0}
+  Description: "The Pulse Striker 20X is a cutting-edge energy weapon optimized for
+    pinpoint accuracy and high-impact blasts. Featuring an ergonomic design and state-of-the-art
+    plasma capacitors, it\u2019s a devastating tool for skilled marksmen and tactical
+    operators."
+  Price: 2000000

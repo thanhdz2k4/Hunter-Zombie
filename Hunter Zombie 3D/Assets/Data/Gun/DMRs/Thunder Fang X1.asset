@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db9468bf13c8294fb870d40b039427c, type: 3}
+  m_Name: Thunder Fang X1
+  m_EditorClassIdentifier: 
+  Type_Gun: 1
+  Rarity_Tiers: 4
+  Charge_Rate: 74.7
+  Impact: 68.8
+  Range: 68.8
+  Stability: 73.4
+  Reload: 74.1
+  Buttlet_Quantity: 45
+  Comsuming_Attack: 410
+  Name_Gun: Thunder Fang X1
+  Texture2D: {fileID: 0}
+  Description: The Thunder Fang X1 is a powerhouse DMR built for overwhelming firepower
+    and accuracy. Its extended barrel and integrated stabilization system provide
+    unparalleled precision, allowing marksmen to strike fear into their targets from
+    any range.
+  Price: 5000000
