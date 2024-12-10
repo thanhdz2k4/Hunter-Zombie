@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 1
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 14e97d44cf1586f4ba766c661b158eaf, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 87998d4119bf2e34e8951120848fdea5, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Sophia
+  state: 'Offline '
+  code: uiop-789-ghjk-567-87654
+  player_Level: 30
+  character_Level: 18
+  character_bar_Level: 60
+  attack: 180
+  armor: 120
+  hp: 900
+  description: "Hey, I\u2019m Sophia. I love trying out new strategies and testing
+    the limits of my character. While I usually play solo, I occasionally enjoy joining
+    others for co-op missions. My favorite time to play is in the evenings after
+    work, so don\u2019t hesitate to send me an invite if you see me online!"
+  gunSO: {fileID: 11400000, guid: d6c0698755eed29409ee318bddd1a119, type: 2}

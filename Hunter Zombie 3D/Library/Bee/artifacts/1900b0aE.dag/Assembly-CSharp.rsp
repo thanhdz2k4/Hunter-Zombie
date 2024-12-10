@@ -432,6 +432,7 @@
 "Assets/Scripts/UI/Screen/OptionScreen.cs"
 "Assets/Scripts/UI/Screen/ShopCashScreen.cs"
 "Assets/Scripts/UI/Screen/Toolbar.cs"
+"Assets/Scripts/UI/Template/PlayerTemplate.cs"
 "Assets/Scripts/UI/Toast/Toast.cs"
 "Assets/Scripts/VFX/Audio/AudioBase.cs"
 "Assets/Scripts/VFX/Audio/AudioManager.cs"

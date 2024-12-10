@@ -2,14 +2,14 @@
     "UxmlGuid": "0b369ed673aea3b4e97ed13d70b20cb2",
     "UxmlPath": "Assets/UI/UXML/Template Item/Friend_Template.uxml",
     "CanvasX": 0,
-    "CanvasY": 11,
+    "CanvasY": 0,
     "CanvasWidth": 1920,
     "CanvasHeight": 1080,
     "MatchGameView": true,
-    "ZoomScale": 0.44999998807907107,
+    "ZoomScale": 0.3499999940395355,
     "PanOffset": {
-        "x": 106.51351928710938,
-        "y": 180.7935333251953
+        "x": 75.54257202148438,
+        "y": 61.066532135009769
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: b782dc0b62d91564d92c995add12aebe, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 87998d4119bf2e34e8951120848fdea5, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Alex
+  state: Online
+  code: axnd-123-jklm-908-23456
+  player_Level: 45
+  character_Level: 25
+  character_bar_Level: 75
+  attack: 220
+  armor: 150
+  hp: 1200
+  description: "Hello, I'm Alex! I enjoy exploring every aspect of the game on my
+    own. It may seem lonely, but I find it incredibly rewarding to master skills
+    at my own pace. Changing strategies frequently keeps things interesting for me,
+    and I\u2019m always open to new ideas. I often play late at night, so if you're
+    ever up for teaming up, feel free to join my team. Let's have fun together!"
+  gunSO: {fileID: 11400000, guid: d68ea8dc80b7e9f4db11cdb793f56f5a, type: 2}

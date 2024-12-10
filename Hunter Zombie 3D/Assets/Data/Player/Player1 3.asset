@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 3
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 7aaadb77141f79b47a6b21974ca0a456, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 6629df728d35adc4e8240c92696c53da, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Mia
+  state: Offline
+  code: zxcv-567-oplk-890-54321
+  player_Level: 20
+  character_Level: 12
+  character_bar_Level: 50
+  attack: 100
+  armor: 70
+  hp: 500
+  description: "Hey there! I\u2019m Mia, a casual player who loves exploring the
+    game world at my own pace. I enjoy discovering hidden secrets and crafting unique
+    items. I\u2019m usually online during weekends, so if you\u2019re looking for
+    someone to explore with, feel free to reach out!"
+  gunSO: {fileID: 11400000, guid: 4e8df9a1636645d44a0f1605f65d1928, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 12
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 1d2d8cb6d5eeca341a7d08d08c00e4c1, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 974670a572711694c979f845143b5be5, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Ethan
+  state: Offline
+  code: zxcv-321-nbvc-890-44567
+  player_Level: 36
+  character_Level: 21
+  character_bar_Level: 66
+  attack: 195
+  armor: 135
+  hp: 1050
+  description: "Hi, I\u2019m Ethan. I\u2019m all about improving my combat skills
+    and finding rare items. My playstyle is a mix of exploration and action, and
+    I enjoy playing both solo and in teams. If you need a reliable ally, count me
+    in!"
+  gunSO: {fileID: 11400000, guid: ece269f00d0404749909488dbdfcc102, type: 2}

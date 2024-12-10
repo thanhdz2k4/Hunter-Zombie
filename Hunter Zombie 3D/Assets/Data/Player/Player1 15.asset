@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 15
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 3020804b26a692242856c785357a391a, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 559f8803e636ba24c9be4892c6901a67, type: 3}
+  character_Model: {fileID: 8400000, guid: 7a34fc12978e66c4990fc7d2925767f5, type: 2}
+  name_Player: Olivia
+  state: Online
+  code: abcd-2345-wxyz-9876-54321
+  player_Level: 47
+  character_Level: 26
+  character_bar_Level: 74
+  attack: 215
+  armor: 145
+  hp: 1250
+  description: "Hi, I\u2019m Olivia! I love immersing myself in the game world, taking
+    on challenging quests, and refining my combat skills. I\u2019m always experimenting
+    with new strategies and builds, which keeps the game fresh and exciting. Although
+    I often play solo, I enjoy teaming up for big events or tough missions. You\u2019ll
+    usually find me online in the evenings, ready to take on new adventures with
+    fellow players!"
+  gunSO: {fileID: 11400000, guid: b5087893f74b53045869f6fe86b23c27, type: 2}

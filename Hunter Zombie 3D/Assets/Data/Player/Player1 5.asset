@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 5
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 486f321c347824440baeab97fee72251, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 2e1d676add058a846bb586c7b5c20a3e, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Emma
+  state: Online
+  code: plmn-567-qwer-123-78654
+  player_Level: 42
+  character_Level: 24
+  character_bar_Level: 72
+  attack: 210
+  armor: 120
+  hp: 1150
+  description: "Hello, I'm Emma! I love exploring new levels and discovering hidden
+    treasures. Playing solo gives me the freedom to experiment with different playstyles,
+    but I also enjoy teaming up with others for challenging missions. I\u2019m online
+    most evenings and always open to making new friends in the game!"
+  gunSO: {fileID: 11400000, guid: 4e8df9a1636645d44a0f1605f65d1928, type: 2}

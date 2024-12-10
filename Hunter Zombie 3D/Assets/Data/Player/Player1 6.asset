@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df48b9ae87389974b8a4591e2fdbe35a, type: 3}
+  m_Name: Player1 6
+  m_EditorClassIdentifier: 
+  avatar_Image: {fileID: 2800000, guid: 07583a85f4ca64c47a1da8e6b4bf7841, type: 3}
+  avatar_Frame: {fileID: 2800000, guid: 3388aae6aa0ef43418014509c7e1703c, type: 3}
+  character_Model: {fileID: 8400000, guid: 28f4f4c1d95d51d42bceb88ccbbf9bfd, type: 2}
+  name_Player: Oliver
+  state: Offline
+  code: tyui-890-zxcv-345-99876
+  player_Level: 38
+  character_Level: 22
+  character_bar_Level: 68
+  attack: 190
+  armor: 125
+  hp: 1080
+  description: "Hey there! I\u2019m Oliver. I like balancing strategy with action
+    and often spend time upgrading my character\u2019s abilities. I prefer co-op
+    missions, but I don\u2019t mind playing solo to sharpen my skills. Feel free
+    to invite me if you see me online!"
+  gunSO: {fileID: 11400000, guid: b5087893f74b53045869f6fe86b23c27, type: 2}
