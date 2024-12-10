@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 40
   Comsuming_Attack: 230
   Name_Gun: Azure Fang M7
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: a9d4863318211254ead1be88d70cd582, type: 3}
   Description: The Azure Fang M7 is a sleek, semi-automatic DMR designed for agile
     marksmen. Its lightweight frame and recoil-dampening system ensure rapid follow-up
     shots, while its advanced targeting scope makes it a formidable weapon in dynamic

@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 120
   Comsuming_Attack: 230
   Name_Gun: Specter Forge L33T
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 3161e8c468a787b43873655cd655756b, type: 3}
   Description: "The Specter Forge L33T is a futuristic, dual-mode weapon capable
     of transitioning between kinetic and energy rounds. Engineered with advanced
     cooling systems and a cyberpunk aesthetic, it\u2019s a favorite among tech-savvy

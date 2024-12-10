@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 40
   Comsuming_Attack: 210
   Name_Gun: Shadow Burst Mk. IV
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 66b902312db66fc41bd6edc247e6cd1c, type: 3}
   Description: The Shadow Burst Mk. IV is a high-performance, compact plasma rifle
     engineered for stealth and rapid engagements. Crafted from lightweight composite
     materials, it combines a futuristic design with unparalleled firepower, making

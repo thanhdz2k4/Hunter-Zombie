@@ -72,6 +72,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\ListPlayerScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Scripts\Input\MousePosition.cs" />
@@ -128,8 +129,10 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Scripts\Input\InputAWSD.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\InforPayerScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Scripts\Physics\Movelocamotion.cs" />
+    <Compile Include="Assets\Scripts\UI\Controller\PlayerTemplateController.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\MainToast.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\IntroScreen.cs" />
   </ItemGroup>
@@ -192,6 +195,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.shader" />
+    <None Include="Assets\UI\UXML\Screens\Add_Friend--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeaves.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.cginc" />
@@ -199,6 +203,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
     <None Include="Assets\UI\UXML\Screens\PlayScreen.uxml" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Triplanar_BumpSpec.shader" />
+    <None Include="Assets\UI\UXML\Screens\Infor_Friend--Screen.uxml" />
     <None Include="Assets\UI\UXML\Screens\Main--Screen.uxml" />
     <None Include="Assets\UI\USS\Base\Toolbar.uss" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Skybox_Rotating.shader" />

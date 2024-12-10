@@ -45,7 +45,7 @@ public class Toolbar : MenuScreen
 
     private void ShowAddFiendScreen(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        m_UIController.ShowListPlayerScreen();
     }
 
     private void ShowShopScreen(ClickEvent evt)
@@ -55,6 +55,6 @@ public class Toolbar : MenuScreen
 
     private void ShowAddCoinScreen(ClickEvent evt)
     {
-        m_UIController.ShowCashShowScreen();
+        m_UIController.ShowCashScreen();
     }
 }

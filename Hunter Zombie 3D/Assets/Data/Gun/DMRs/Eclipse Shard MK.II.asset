@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 320
   Name_Gun: Eclipse Shard MK.II
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: edfaa8e77a9bf8e44a0da3dc800ed67a, type: 3}
   Description: "The Eclipse Shard MK.II is a compact and tactical DMR tailored for
     covert operations. Featuring a carbon fiber body and noise-suppression technology,
     it\u2019s the perfect choice for marksmen who demand stealth and precision in

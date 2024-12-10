@@ -10,6 +10,8 @@ public class UIController : MonoBehaviour
     [SerializeField] LoadingScreen loading_Screen;
     [SerializeField] MainScreen main_Screen;
     [SerializeField] ShopCashScreen cashShop_Screen;
+    [SerializeField] ListPlayerScreen listPlayer_Screen;
+    [SerializeField] InforPayerScreen inforPayer_Screen;
 
     [Header("TOOLBAR")]
     [SerializeField] Toolbar toolbar;
@@ -24,12 +26,20 @@ public class UIController : MonoBehaviour
         if(loading_Screen != null) listOfScreens.Add(loading_Screen);
         if(main_Screen != null) listOfScreens.Add(main_Screen);
         if(cashShop_Screen != null) listOfScreens.Add(cashShop_Screen);
+        if(listPlayer_Screen != null) listOfScreens.Add(listPlayer_Screen);
+        if(inforPayer_Screen != null) listOfScreens.Add(inforPayer_Screen);
 
-        ShowIntroGame();
+        ShowCashScreen();
          
     }
 
-    public void ShowCashShowScreen()
+    public void ShowInforPlayerScreen(PlayerSO playerSO)
+    {
+        ShowModalScreen(inforPayer_Screen, listOfScreens);
+        inforPayer_Screen.SetData(playerSO);
+    }
+
+    public void ShowCashScreen()
     {
         ShowModalScreen(cashShop_Screen, listOfScreens);
     }
@@ -52,6 +62,11 @@ public class UIController : MonoBehaviour
     public void ShowMainScreen()
     {
         ShowModalScreen(main_Screen, listOfScreens);
+    }
+
+    public void ShowListPlayerScreen()
+    {
+        ShowModalScreen(listPlayer_Screen, listOfScreens);
     }
 
     public void ShowToolbar()

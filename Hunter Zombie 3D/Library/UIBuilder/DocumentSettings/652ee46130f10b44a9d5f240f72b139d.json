@@ -1,15 +1,15 @@
 {
     "UxmlGuid": "652ee46130f10b44a9d5f240f72b139d",
-    "UxmlPath": "Assets/UI/UXML/Screens/ShopScreen.uxml",
+    "UxmlPath": "Assets/UI/UXML/Screens/ShopCashScreen.uxml",
     "CanvasX": 1,
     "CanvasY": 0,
     "CanvasWidth": 1920,
     "CanvasHeight": 1080,
     "MatchGameView": true,
-    "ZoomScale": 0.3499999940395355,
+    "ZoomScale": 0.25,
     "PanOffset": {
-        "x": 90.48385620117188,
-        "y": -98.66915893554688
+        "x": 207.5538330078125,
+        "y": 49.187416076660159
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

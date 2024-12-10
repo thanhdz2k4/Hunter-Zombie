@@ -38,3 +38,24 @@
     font-size: 40px;
     color: rgb(171, 4, 4);
 }
+
+.Item_Cash--Container:hover {
+    width: 535px;
+    height: 420px;
+}
+
+.Item_Cash--Container {
+    height: 407px;
+    width: 520px;
+    position: absolute;
+}
+
+#Background_Cash:hover {
+    width: 535px;
+    height: 420px;
+}
+
+#Background_Cash {
+    width: 418px;
+    height: 359px;
+}

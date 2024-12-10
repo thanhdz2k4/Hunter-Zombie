@@ -21,8 +21,6 @@ public class PlayerTemplate
     Button m_Add_Player__Button, m_Information_Player__Button;
 
 
-
-
     PlayerSO playerSO;
     GunSO gunSO;
 
@@ -87,11 +85,11 @@ public class PlayerTemplate
         
     }
 
-    public void SetColor(VisualElement element, string color) {
+    public void SetColor(Label element, string color) {
         Color newColor;
         if (ColorUtility.TryParseHtmlString(color, out newColor))
         {
-            element.style.backgroundColor = newColor; // Set the background color
+            element.style.color = newColor; // Set the background color
             return;
         }
     }
@@ -105,11 +103,12 @@ public class PlayerTemplate
 
     private void HandShowMoreInformation(ClickEvent evt)
     {
-        Add_Friend_Event.Invoke(playerSO.name_Player);
+        Show_More_Information_Event.Invoke(playerSO);
+        
     }
 
     private void HandleAddFriend(ClickEvent evt)
     {
-        Show_More_Information_Event.Invoke(playerSO);
+        Add_Friend_Event.Invoke(playerSO.name_Player);
     }
 }

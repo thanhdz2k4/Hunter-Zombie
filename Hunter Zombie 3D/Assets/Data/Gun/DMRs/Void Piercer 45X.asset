@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 48
   Comsuming_Attack: 555
   Name_Gun: Void Piercer 45X
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 6cd131f1caf3c6d498acb3754705f91e, type: 3}
   Description: The Void Piercer 45X is a next-generation DMR optimized for piercing
     through fortified targets. Its hybrid ammunition system and ultra-stable firing
     platform make it indispensable for taking out high-priority enemies in hostile

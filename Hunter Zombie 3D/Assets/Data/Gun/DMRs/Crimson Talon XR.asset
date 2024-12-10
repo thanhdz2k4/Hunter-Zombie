@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 302
   Name_Gun: Crimson Talon XR
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 6f14e4ea7bc69434b8b303feaa48b056, type: 3}
   Description: The Crimson Talon XR is a battle-tested DMR engineered for power and
     precision. Its reinforced barrel and thermal imaging scope allow operators to
     dominate in any environment, from dense urban landscapes to open deserts.

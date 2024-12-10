@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 220
   Name_Gun: Iron Claw 45X
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 5b2f5a4d5c4bdd640a3ef5a06f9f033d, type: 3}
   Description: The Iron Claw 45X is a rugged, heavy-duty ballistic weapon designed
     for frontline combat. Constructed from reinforced steel with precision machining,
     it delivers relentless firepower and unmatched reliability, making it ideal for

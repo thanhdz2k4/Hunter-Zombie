@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 40
   Comsuming_Attack: 230
   Name_Gun: Pulse Striker 20X
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: d8b88218bb140e84b883dd1f47173c45, type: 3}
   Description: "The Pulse Striker 20X is a cutting-edge energy weapon optimized for
     pinpoint accuracy and high-impact blasts. Featuring an ergonomic design and state-of-the-art
     plasma capacitors, it\u2019s a devastating tool for skilled marksmen and tactical

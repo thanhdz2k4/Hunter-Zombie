@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 100
   Comsuming_Attack: 555
   Name_Gun: Viper Core 9C
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 89df44cc159b1c445a7e8b2c3e5dd351, type: 3}
   Description: The Viper Core 9C is a sleek, lightweight submachine gun tailored
     for close-quarters skirmishes. Built with a streamlined frame and advanced recoil
     dampening, it provides rapid-fire capabilities and deadly accuracy, perfect for

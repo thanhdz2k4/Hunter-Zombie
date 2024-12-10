@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 120
   Comsuming_Attack: 210
   Name_Gun: Obsidian Razor ZR1
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 755c227098d8e5d46a14082a331d3cfd, type: 3}
   Description: The Obsidian Razor ZR1 is an ultra-stylish, precision-crafted sniper
     rifle made from obsidian-infused alloys. With an extended range and unparalleled
     accuracy, it excels in long-range eliminations, delivering lethal strikes from

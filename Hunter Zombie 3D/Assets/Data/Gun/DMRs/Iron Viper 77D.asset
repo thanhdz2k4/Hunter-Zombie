@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 350
   Name_Gun: Iron Viper 77D
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 24e571fc87f14f542b9cee3ee2bfd08f, type: 3}
   Description: The Iron Viper 77D is a rugged, semi-automatic DMR designed for durability
     in extreme conditions. Its advanced ballistics software and adjustable firing
     modes make it an adaptable weapon for marksmen in unpredictable combat scenarios.

@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 210
   Comsuming_Attack: 300
   Name_Gun: Titan Edge 7A
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: 36c6eb028223a7a4bafb33ad1160c9bb, type: 3}
   Description: The Titan Edge 7A is a versatile, mid-range assault rifle designed
     for adaptability in any combat situation. With a robust titanium frame and modular
     attachments, it balances power and precision, ensuring dominance across diverse

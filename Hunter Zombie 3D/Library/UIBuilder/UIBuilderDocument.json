@@ -13,31 +13,56 @@
         "m_CodePreviewVisible": true,
         "m_OpenUXMLFiles": [
             {
-                "m_OpenUSSFiles": [],
+                "m_OpenUSSFiles": [
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "c980d52e24a01c94797be95de3ba1cfc",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Base/Pointer.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "a8d8253b140215f47b1ef50434f21051",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Screen/Shop_Screen.uss"
+                    }
+                ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Template Item/Friend_Template.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Screens/ShopCashScreen.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "0b369ed673aea3b4e97ed13d70b20cb2",
+                    "guid": "652ee46130f10b44a9d5f240f72b139d",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
-                    "instanceID": 0
+                    "fileID": 7433441132597879392,
+                    "guid": "c980d52e24a01c94797be95de3ba1cfc",
+                    "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "0b369ed673aea3b4e97ed13d70b20cb2",
-                    "UxmlPath": "Assets/UI/UXML/Template Item/Friend_Template.uxml",
-                    "CanvasX": 0,
+                    "UxmlGuid": "652ee46130f10b44a9d5f240f72b139d",
+                    "UxmlPath": "Assets/UI/UXML/Screens/ShopCashScreen.uxml",
+                    "CanvasX": 1,
                     "CanvasY": 0,
                     "CanvasWidth": 1920,
                     "CanvasHeight": 1080,
                     "MatchGameView": true,
-                    "ZoomScale": 0.3499999940395355,
+                    "ZoomScale": 0.6000000238418579,
                     "PanOffset": {
-                        "x": 75.54257202148438,
-                        "y": 61.066532135009769
+                        "x": 98.21284484863281,
+                        "y": -131.9392547607422
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
