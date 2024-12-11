@@ -24,7 +24,6 @@ public class ListPlayerScreen : MenuScreen
     private void Start()
     {
         PlayerTemplateController.fillPlayersEvent += Load_Data_Into_List;
-        
     }
 
     private void Load_Data_Into_List(List<PlayerSO> listOfPlayer)
@@ -112,7 +111,6 @@ public class ListPlayerScreen : MenuScreen
     private void ShowInformationPlayerEvent(PlayerSO playerSO)
     {
         m_UIController.ShowInforPlayerScreen(playerSO);
-        HideScreen();
     }
 
     private void HandleAddFriendEvent(string obj)

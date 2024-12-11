@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/USS/Screen/Gun_Shop_Screen.uss?fileID=7433441132597879392&amp;guid=6c969962b82094044ab50c97fd3ed2a3&amp;type=3#Gun_Shop_Screen" />
+    <ui:VisualElement name="Gun_Shop--Screen" style="flex-grow: 1; position: absolute; width: 100%; height: 90%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; top: 110px;">
+        <ui:VisualElement name="Tab_Shop--Bar" class="CursorA" style="flex-grow: 1; position: absolute; height: 100px; width: 1912px; top: 174px; flex-direction: row; justify-content: center; left: 2px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Assual_Rifles--Button" class="Tab_bar_shop--Button--Active CursorB" style="background-image: resource(&apos;Guns/Type/66_transparent&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="DMRs--Button" class="Tab_bar_shop--Button CursorB" style="background-image: resource(&apos;Guns/Type/83_transparent&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="SMGs--Button" class="Tab_bar_shop--Button CursorB" style="background-image: resource(&apos;Guns/Type/91_transparent&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Shotguns--Button" class="Tab_bar_shop--Button CursorB" style="background-image: resource(&apos;Guns/Type/65_transparent&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Snipper_Rifles--Button" class="Tab_bar_shop--Button CursorB" style="background-image: resource(&apos;Guns/Type/68_transparent&apos;);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Pistols--Button" class="Tab_bar_shop--Button CursorB" style="background-image: resource(&apos;Guns/Type/73_transparent&apos;); border-right-width: 3px;" />
+        </ui:VisualElement>
+        <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" mode="Horizontal" vertical-scroller-visibility="Hidden" horizontal-scroller-visibility="AlwaysVisible" name="Guns_Shop--ScrollView" style="position: absolute; height: 356px; width: auto; top: 268px; left: 50px; right: 62px;" />
+        <ui:VisualElement class="Pointer_Press" style="flex-grow: 1; position: absolute; height: 82px; width: 159px; top: 880px; left: 31px; flex-direction: row;">
+            <ui:VisualElement class="Pointer_Press" style="flex-grow: 0; background-image: resource(&apos;UI/Icons/43_transparent&apos;); -unity-background-scale-mode: scale-and-crop; rotate: -90deg; width: 44px; flex-shrink: 0;" />
+            <ui:Button text="Back" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Back_Gun_Shop--Button" class="Pointer_Press Back_Shop_Purchase--Button" style="position: relative; -unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; background-color: rgba(188, 188, 188, 0); top: auto; left: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 30px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

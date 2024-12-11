@@ -76,6 +76,8 @@
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\Scripts\Input\MousePosition.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\InforGunScreen.cs" />
+    <Compile Include="Assets\Scripts\UI\Template\GunTemplate.cs" />
     <Compile Include="Assets\Scripts\SO\PlayerSO.cs" />
     <Compile Include="Assets\Scripts\VFX\Audio\AudioManager.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DitheringComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\ShopGunScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingProfile.cs" />
@@ -119,6 +122,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
     <Compile Include="Assets\Scripts\UI\Toast\Toast.cs" />
     <Compile Include="Assets\Scripts\SO\GunSO.cs" />
+    <Compile Include="Assets\Scripts\UI\Controller\GunsController.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
@@ -162,6 +166,7 @@
     <None Include="Assets\UI\USS\Screen\Option_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\Intro--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+    <None Include="Assets\UI\UXML\Screens\Gun_Shop--Screen.uxml" />
     <None Include="Assets\UI\USS\Screen\MainScreen.uss" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeavesOptimized.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
@@ -195,6 +200,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Common.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.shader" />
+    <None Include="Assets\UI\USS\Screen\Gun_Shop_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\PlayGame_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\UI\UXML\Template Item\Gun_Component.uxml" />

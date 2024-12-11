@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 410
   Name_Gun: Thunder Fang X1
-  Texture2D: {fileID: 0}
+  Texture2D: {fileID: 2800000, guid: fd9077e3076c4dc4da10b92056c877e1, type: 3}
   Description: The Thunder Fang X1 is a powerhouse DMR built for overwhelming firepower
     and accuracy. Its extended barrel and integrated stabilization system provide
     unparalleled precision, allowing marksmen to strike fear into their targets from

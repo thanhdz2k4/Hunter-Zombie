@@ -50,7 +50,7 @@ public class Toolbar : MenuScreen
 
     private void ShowShopScreen(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        m_UIController.ShowGunShopScreen();
     }
 
     private void ShowAddCoinScreen(ClickEvent evt)

@@ -1,0 +1,32 @@
+.Tab_bar_shop--Button--Active {
+    width: 200px;
+    height: 90px;
+    background-color: rgba(190, 190, 190, 0.71);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 3px;
+    border-left-width: 3px;
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.Tab_bar_shop--Button {
+    width: 200px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    height: 90px;
+}
+
+.Tab_bar_shop--Button:hover {
+    background-color: rgba(190, 190, 190, 0.71);
+    -unity-background-scale-mode: scale-and-crop;
+}

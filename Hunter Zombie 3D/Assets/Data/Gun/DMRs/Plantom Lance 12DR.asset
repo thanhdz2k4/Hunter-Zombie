@@ -22,7 +22,7 @@ MonoBehaviour:
   Buttlet_Quantity: 45
   Comsuming_Attack: 390
   Name_Gun: Phantom Lance 12DR
-  Texture2D: {fileID: 2800000, guid: e486562685cfde14088bb0da86071949, type: 3}
+  Texture2D: {fileID: 2800000, guid: 14d0246ce8e14f645bb6c537593ed29e, type: 3}
   Description: The Phantom Lance 12DR is a high-caliber designated marksman rifle
     (DMR) built for sharpshooters seeking precision and versatility. Crafted with
     aerospace-grade alloys and advanced optics, it excels in mid-to-long-range engagements,

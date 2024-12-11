@@ -1,4 +1,5 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/UI/USS/Screen/Infor_Gun_Screen.uss?fileID=7433441132597879392&amp;guid=44ffe168d24e87a4cb90bed32b807fdc&amp;type=3#Infor_Gun_Screen" />
     <ui:VisualElement name="Information_Gun_Screen" style="flex-grow: 1; position: absolute; width: 100%; height: 90%; top: 110px; display: flex;">
         <ui:VisualElement name="Gun_Gun--Image" style="flex-grow: 1; position: absolute; height: 895px; width: 2617px; top: 97px; left: 87px; background-image: url(&apos;project://database/Assets/Resources/Guns/Assual%20Rifles/Gun_030.png?fileID=2800000&amp;guid=36c6eb028223a7a4bafb33ad1160c9bb&amp;type=3#Gun_030&apos;); rotate: -15deg; -unity-background-scale-mode: scale-to-fit;" />
         <ui:VisualElement name="Indicator--Container" style="flex-grow: 1; position: absolute; height: 759px; width: 802px; left: 39px; top: 102px;">
