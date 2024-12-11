@@ -10,6 +10,7 @@ public class ListPlayerScreen : MenuScreen
     [SerializeField] string id_ScrollView__Containter;
     [SerializeField] string id_Input__TextField;
     [SerializeField] string id_Search__Button;
+    [SerializeField] string id_Back__Button;
 
     [Header("Template")]
     [SerializeField] VisualTreeAsset m_Item__Component;
@@ -17,7 +18,7 @@ public class ListPlayerScreen : MenuScreen
     [SerializeField] List<PlayerSO> listOfPlayer;
 
     TextField m_Input__TextField;
-    Button m_Search__Button;
+    Button m_Search__Button, m_Back__Button;
     VisualElement m_ScrollView__Containter;
 
     private void Start()
@@ -38,15 +39,20 @@ public class ListPlayerScreen : MenuScreen
         m_ScrollView__Containter = m_Root.Q<VisualElement>(id_ScrollView__Containter);
         m_Input__TextField = m_Root.Q<TextField>(id_Input__TextField);
         m_Search__Button = m_Root.Q<Button>(id_Search__Button);
+        m_Back__Button = m_Root.Q<Button>(id_Back__Button);
     }
 
     protected override void RegisterButtonCallBacks()
     {
         base.RegisterButtonCallBacks();
+        m_Back__Button.RegisterCallback<ClickEvent>(HandExitScreenEvent);
         
     }
 
-   
+    private void HandExitScreenEvent(ClickEvent evt)
+    {
+        m_UIController.ShowMainScreen();
+    }
 
     private void LoadDataIntoScrollView(List<PlayerSO> data)
     {

@@ -3,11 +3,12 @@
 
 .ToolBar--Button {
     -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: stretch-to-fill;
 }
 
 .ToolBar--Button:hover {
     background-color: rgba(255, 255, 255, 0.6);
-    -unity-background-image-tint-color: rgb(14, 64, 84);
+    -unity-background-image-tint-color: rgb(0, 252, 255);
     -unity-background-scale-mode: scale-to-fit;
 }
 

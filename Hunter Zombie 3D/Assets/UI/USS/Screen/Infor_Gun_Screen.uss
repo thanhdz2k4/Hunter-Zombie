@@ -1,0 +1,18 @@
+.hover_information_gun:hover {
+    border-left-color: rgb(254, 255, 0);
+    border-right-color: rgb(254, 255, 0);
+    border-top-color: rgb(254, 255, 0);
+    border-bottom-color: rgb(254, 255, 0);
+}
+
+.hover_information_gun {
+    border-left-color: rgba(255, 239, 0, 0);
+    border-right-color: rgba(255, 239, 0, 0);
+    border-top-color: rgba(255, 239, 0, 0);
+    border-bottom-color: rgba(255, 239, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}

@@ -11,11 +11,13 @@
     <ui:Template name="Toast_Main" src="project://database/Assets/UI/UXML/Screens/Toast_Main.uxml?fileID=9197481963319205126&amp;guid=e783decb9995ced46bc10c419b9c260e&amp;type=3#Toast_Main" />
     <ui:Template name="Add_Friend--Screen" src="project://database/Assets/UI/UXML/Screens/Add_Friend--Screen.uxml?fileID=9197481963319205126&amp;guid=5d58049341018ea42a8cb11647466645&amp;type=3#Add_Friend--Screen" />
     <ui:Template name="Infor_Friend--Screen" src="project://database/Assets/UI/UXML/Screens/Infor_Friend--Screen.uxml?fileID=9197481963319205126&amp;guid=8e7afe490efceca498ac9487f508aa8b&amp;type=3#Infor_Friend--Screen" />
+    <ui:Template name="Information_Gun_Screen" src="project://database/Assets/UI/UXML/Screens/Information_Gun_Screen.uxml?fileID=9197481963319205126&amp;guid=dadfbae54db81c642aee7f3b9cb0c91e&amp;type=3#Information_Gun_Screen" />
     <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
     <Style src="project://database/Assets/UI/USS/Screen/Option_Screen.uss?fileID=7433441132597879392&amp;guid=758996f98eaf4784ca9d5ec91faf4cfc&amp;type=3#Option_Screen" />
     <Style src="project://database/Assets/UI/USS/Screen/MainScreen.uss?fileID=7433441132597879392&amp;guid=3694a2615e2976542a9ebdd2c7112362&amp;type=3#MainScreen" />
     <Style src="project://database/Assets/UI/USS/Base/Toolbar.uss?fileID=7433441132597879392&amp;guid=9f466b03f6b2ab0469d1f74e9f585b15&amp;type=3#Toolbar" />
     <Style src="project://database/Assets/UI/USS/Screen/Shop_Screen.uss?fileID=7433441132597879392&amp;guid=a8d8253b140215f47b1ef50434f21051&amp;type=3#Shop_Screen" />
+    <Style src="project://database/Assets/UI/USS/Screen/Infor_Gun_Screen.uss?fileID=7433441132597879392&amp;guid=44ffe168d24e87a4cb90bed32b807fdc&amp;type=3#Infor_Gun_Screen" />
     <ui:VisualElement name="Background" class="Pointer_Default" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; background-image: resource(&apos;UI/Background_UI/Clarify/Bacground3_1&apos;); display: flex; top: auto; left: auto; overflow: visible; visibility: visible;">
         <ui:Instance template="Toast" name="Toast" style="display: none; opacity: 1;" />
         <ui:Instance template="Intro--Screen" name="Intro--Screen" style="display: none;" />
@@ -25,10 +27,11 @@
         <ui:Instance template="Toolbar" name="Toolbar" style="display: none;" />
         <ui:Instance template="Infor_Player--Container" name="Infor_Player--Container" style="display: none;" />
         <ui:Instance template="Main--Screen" name="Main--Screen" style="display: none;" />
-        <ui:Label tabindex="-1" text="player&apos;s information" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header--Label" class="Pointer_Default" style="position: absolute; top: 10px; left: 593px; height: 59px; width: 733px; -unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 100px; margin-top: 30px; display: none;" />
+        <ui:Label tabindex="-1" text="player&apos;s information" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Header--Label" class="Pointer_Default" style="position: absolute; top: 10px; left: 593px; height: 59px; width: 733px; -unity-font: url(&apos;project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&amp;guid=69a346d713ac8ff48a40ec4d64b33478&amp;type=3#HACKED_Title&apos;); -unity-font-definition: initial; color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 100px; margin-top: 30px; display: flex;" />
         <ui:Instance template="ShopScreen" name="ShopCashScreen" style="display: none;" />
         <ui:Instance template="Toast_Main" name="Toast_Main" style="display: none;" />
         <ui:Instance template="Add_Friend--Screen" name="Add_Friend--Screen" style="display: none;" />
         <ui:Instance template="Infor_Friend--Screen" name="Infor_Friend--Screen" style="display: none;" />
+        <ui:Instance template="Information_Gun_Screen" name="Information_Gun_Screen" style="display: none;" />
     </ui:VisualElement>
 </ui:UXML>

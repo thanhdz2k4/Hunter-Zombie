@@ -1,0 +1,40 @@
+.Infor_Gun--Button {
+    opacity: 0;
+}
+
+.Infor_Gun--Button:hover {
+    opacity: 1;
+}
+
+.Buy_Gun--Button {
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    -unity-font-style: bold;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.Buy_Gun--Button:hover {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    background-color: rgba(169, 173, 66, 0.64);
+}

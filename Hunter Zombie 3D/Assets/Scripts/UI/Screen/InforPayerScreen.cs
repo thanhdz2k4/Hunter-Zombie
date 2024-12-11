@@ -119,11 +119,11 @@ public class InforPayerScreen : MenuScreen
         m_Attack__Label.text = playerSO.attack.ToString();
         m_Armor__Label.text = playerSO.armor.ToString();
         m_Hp__Label.text = playerSO.hp.ToString();
-        m_State__Label.text = playerSO.state.ToString();
-        m_Code__Label.text = playerSO.code;
+        m_State__Label.text ="State: " + playerSO.state.ToString();
+        m_Code__Label.text ="Code: " + playerSO.code;
         m_Description_Player__Label.text = playerSO.description;
-        AssignRenderTextureToBackground(m_Character_model__Texture2D, playerSO.character_Model);
-        m_Level_Character__Label.text = playerSO.character_Level.ToString() ;
+        //AssignRenderTextureToBackground(m_Character_model__Texture2D, playerSO.character_Model);
+        m_Level_Character__Label.text = "Level: " +  playerSO.character_Level.ToString() ;
 
         m_Name_Gun__Label.text = gunSO.Name_Gun;
         m_Change_Rate__Visual.style.width = new Length(gunSO.Charge_Rate, LengthUnit.Percent);

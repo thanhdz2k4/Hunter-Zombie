@@ -7,12 +7,14 @@
 
 .Play_Main--Button:hover {
     font-size: 150px;
-    color: rgb(255, 244, 0);
+    color: rgb(255, 192, 0);
+    -unity-background-image-tint-color: rgb(255, 0, 2);
 }
 
 .Option_Main--Button:hover {
     font-size: 27px;
-    color: rgb(202, 128, 30);
+    color: rgb(0, 255, 247);
+    -unity-background-image-tint-color: rgb(0, 252, 255);
 }
 
 .Option_Main--Button {

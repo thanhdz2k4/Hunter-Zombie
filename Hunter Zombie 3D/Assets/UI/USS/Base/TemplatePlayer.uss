@@ -1,0 +1,37 @@
+.Player_Template {
+    width: 1250px;
+    height: 190px;
+}
+
+.Player_Template:hover {
+    height: 220px;
+    background-color: rgba(156, 46, 147, 0);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.List_Friend_Text_Hover {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/Fonts/Sci-fi%20font/HACKED_Title.ttf?fileID=12800000&guid=69a346d713ac8ff48a40ec4d64b33478&type=3#HACKED_Title');
+    -unity-font-definition: initial;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+.List_Friend_Text_Hover:hover {
+    font-size: 30px;
+    color: rgb(0, 255, 250);
+    border-left-color: rgb(0, 255, 250);
+    border-right-color: rgb(0, 255, 250);
+    border-top-color: rgb(0, 255, 250);
+    border-bottom-color: rgb(0, 255, 250);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}

@@ -1,0 +1,24 @@
+.Information_Gun_Friend {
+    border-left-color: rgb(135, 126, 126);
+    border-right-color: rgb(135, 126, 126);
+    border-top-color: rgb(135, 126, 126);
+    border-bottom-color: rgb(135, 126, 126);
+    border-bottom-width: 1px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.Information_Gun_Friend:hover {
+    border-left-color: rgb(11, 255, 222);
+    border-right-color: rgb(11, 255, 222);
+    border-top-color: rgb(11, 255, 222);
+    border-bottom-color: rgb(11, 255, 222);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    font-size: 22px;
+    padding-right: 20px;
+    color: rgb(11, 255, 222);
+}

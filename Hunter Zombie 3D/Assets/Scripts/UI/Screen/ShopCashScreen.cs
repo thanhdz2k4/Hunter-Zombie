@@ -79,7 +79,7 @@ public class ShopCashScreen : MenuScreen
 
     private void HandleExitScreen(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        m_UIController.ShowMainScreen();
     }
 
     private void HandlerPurchangeGem6(ClickEvent evt)

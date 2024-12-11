@@ -153,6 +153,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+    <None Include="Assets\UI\USS\Screen\Infor_Gun_Screen.uss" />
     <None Include="Assets\Option--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorBark.shader" />
     <None Include="Assets\UI\USS\Base\Toolbar.uxml" />
@@ -171,7 +172,9 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\UI\USS\Screen\Infor_Friend_Screen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\UI\USS\Base\Gun_Template.uss" />
     <None Include="Assets\UI\USS\Screen\IntroScreen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\UI\USS\Base\Pointer.uss" />
@@ -181,6 +184,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.shader" />
     <None Include="Assets\UI\UXML\Screens\Loading--Screen.uxml" />
+    <None Include="Assets\UI\UXML\Screens\Information_Gun_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
     <None Include="Assets\UI\UXML\Template Item\Friend_Template.uxml" />
@@ -193,10 +197,12 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.shader" />
     <None Include="Assets\UI\UXML\Screens\PlayGame_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Uber.shader" />
+    <None Include="Assets\UI\UXML\Template Item\Gun_Component.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.shader" />
     <None Include="Assets\UI\UXML\Screens\Add_Friend--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeaves.shader" />
+    <None Include="Assets\UI\USS\Base\TemplatePlayer.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Blit.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Bloom.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
