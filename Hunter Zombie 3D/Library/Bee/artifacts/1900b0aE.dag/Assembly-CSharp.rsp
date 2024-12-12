@@ -435,6 +435,7 @@
 "Assets/Scripts/UI/Screen/MainScreen.cs"
 "Assets/Scripts/UI/Screen/MainToast.cs"
 "Assets/Scripts/UI/Screen/OptionScreen.cs"
+"Assets/Scripts/UI/Screen/SettingsScreen.cs"
 "Assets/Scripts/UI/Screen/ShopCashScreen.cs"
 "Assets/Scripts/UI/Screen/ShopGunScreen.cs"
 "Assets/Scripts/UI/Screen/Toolbar.cs"

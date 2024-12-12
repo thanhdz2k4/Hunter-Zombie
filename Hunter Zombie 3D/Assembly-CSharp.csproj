@@ -115,6 +115,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\ShopGunScreen.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\SettingsScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingProfile.cs" />
@@ -142,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+    <None Include="Assets\UI\USS\Screen\Settings_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\Infor_Player--Container.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\UI\UXML\Toast\Toast.uxml" />
@@ -178,6 +180,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\UI\USS\Screen\Infor_Friend_Screen.uss" />
+    <None Include="Assets\UI\UXML\Screens\Settings-Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\UI\USS\Base\Gun_Template.uss" />
     <None Include="Assets\UI\USS\Screen\IntroScreen.uss" />

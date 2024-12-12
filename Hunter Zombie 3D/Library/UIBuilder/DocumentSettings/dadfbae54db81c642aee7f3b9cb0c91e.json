@@ -6,10 +6,10 @@
     "CanvasWidth": 1920,
     "CanvasHeight": 1080,
     "MatchGameView": true,
-    "ZoomScale": 0.550000011920929,
+    "ZoomScale": 0.25,
     "PanOffset": {
-        "x": -2.130859375,
-        "y": 22.6273193359375
+        "x": 176.82763671875,
+        "y": -7.458038330078125
     },
     "ColorModeBackgroundOpacity": 1.0,
     "ImageModeCanvasBackgroundOpacity": 1.0,

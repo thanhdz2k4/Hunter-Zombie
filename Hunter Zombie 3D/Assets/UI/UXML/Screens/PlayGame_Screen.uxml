@@ -13,6 +13,7 @@
     <ui:Template name="Infor_Friend--Screen" src="project://database/Assets/UI/UXML/Screens/Infor_Friend--Screen.uxml?fileID=9197481963319205126&amp;guid=8e7afe490efceca498ac9487f508aa8b&amp;type=3#Infor_Friend--Screen" />
     <ui:Template name="Information_Gun_Screen" src="project://database/Assets/UI/UXML/Screens/Information_Gun_Screen.uxml?fileID=9197481963319205126&amp;guid=dadfbae54db81c642aee7f3b9cb0c91e&amp;type=3#Information_Gun_Screen" />
     <ui:Template name="Gun_Shop--Screen" src="project://database/Assets/UI/UXML/Screens/Gun_Shop--Screen.uxml?fileID=9197481963319205126&amp;guid=2699b2fad9179cc4b9a848d7e04d21a4&amp;type=3#Gun_Shop--Screen" />
+    <ui:Template name="Settings-Screen" src="project://database/Assets/UI/UXML/Screens/Settings-Screen.uxml?fileID=9197481963319205126&amp;guid=e8cb028d83026ad49805fcecfed94b1a&amp;type=3#Settings-Screen" />
     <Style src="project://database/Assets/UI/USS/Base/Pointer.uss?fileID=7433441132597879392&amp;guid=c980d52e24a01c94797be95de3ba1cfc&amp;type=3#Pointer" />
     <Style src="project://database/Assets/UI/USS/Screen/Option_Screen.uss?fileID=7433441132597879392&amp;guid=758996f98eaf4784ca9d5ec91faf4cfc&amp;type=3#Option_Screen" />
     <Style src="project://database/Assets/UI/USS/Screen/MainScreen.uss?fileID=7433441132597879392&amp;guid=3694a2615e2976542a9ebdd2c7112362&amp;type=3#MainScreen" />
@@ -35,5 +36,6 @@
         <ui:Instance template="Infor_Friend--Screen" name="Infor_Friend--Screen" style="display: none;" />
         <ui:Instance template="Information_Gun_Screen" name="Information_Gun_Screen" style="display: none;" />
         <ui:Instance template="Gun_Shop--Screen" name="Gun_Shop--Screen" style="display: none;" />
+        <ui:Instance template="Settings-Screen" name="Settings-Screen" style="position: absolute; height: 90%; width: 100%; top: 110px; display: none;" />
     </ui:VisualElement>
 </ui:UXML>

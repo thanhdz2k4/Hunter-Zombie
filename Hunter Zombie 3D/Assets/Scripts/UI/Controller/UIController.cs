@@ -14,6 +14,7 @@ public class UIController : MonoBehaviour
     [SerializeField] InforPayerScreen inforPayer_Screen;
     [SerializeField] ShopGunScreen gunShop_Screen;
     [SerializeField] InforGunScreen inforGun_Screen;
+    [SerializeField] SettingsScreen settings_Screen;
 
     [Header("TOOLBAR")]
     [SerializeField] Toolbar toolbar;
@@ -32,9 +33,15 @@ public class UIController : MonoBehaviour
         if(inforPayer_Screen != null) listOfScreens.Add(inforPayer_Screen);
         if(gunShop_Screen != null) listOfScreens.Add(gunShop_Screen);
         if(inforGun_Screen != null) listOfScreens.Add(inforGun_Screen);
+        if(settings_Screen != null) listOfScreens.Add(settings_Screen);
 
-        ShowIntroGame();
+        ShowSettingsScreen();
          
+    }
+
+    public void ShowSettingsScreen() 
+    {
+        ShowModalScreen(settings_Screen, listOfScreens);
     }
 
     public void ShowInforGunScreen(GunSO gunSO) {

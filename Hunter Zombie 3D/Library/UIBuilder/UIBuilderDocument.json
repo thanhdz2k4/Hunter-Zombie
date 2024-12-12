@@ -17,41 +17,41 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "44ffe168d24e87a4cb90bed32b807fdc",
+                            "guid": "900f3f637ee68aa4ea67c9c086717341",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
                             "instanceID": 0
                         },
-                        "m_OldPath": "Assets/UI/USS/Screen/Infor_Gun_Screen.uss"
+                        "m_OldPath": "Assets/UI/USS/Screen/Settings_Screen.uss"
                     }
                 ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Screens/Information_Gun_Screen.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Screens/Settings-Screen.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "dadfbae54db81c642aee7f3b9cb0c91e",
+                    "guid": "e8cb028d83026ad49805fcecfed94b1a",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "fileID": 7433441132597879392,
-                    "guid": "44ffe168d24e87a4cb90bed32b807fdc",
+                    "guid": "900f3f637ee68aa4ea67c9c086717341",
                     "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "dadfbae54db81c642aee7f3b9cb0c91e",
-                    "UxmlPath": "Assets/UI/UXML/Screens/Information_Gun_Screen.uxml",
-                    "CanvasX": 0,
+                    "UxmlGuid": "e8cb028d83026ad49805fcecfed94b1a",
+                    "UxmlPath": "Assets/UI/UXML/Screens/Settings-Screen.uxml",
+                    "CanvasX": 73,
                     "CanvasY": 0,
-                    "CanvasWidth": 1920,
+                    "CanvasWidth": 1846,
                     "CanvasHeight": 1080,
-                    "MatchGameView": true,
-                    "ZoomScale": 0.550000011920929,
+                    "MatchGameView": false,
+                    "ZoomScale": 0.5,
                     "PanOffset": {
-                        "x": -2.130859375,
-                        "y": 22.6273193359375
+                        "x": -371.18560791015627,
+                        "y": 7.1346893310546879
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
