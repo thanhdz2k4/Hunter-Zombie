@@ -40,7 +40,7 @@ public class Toolbar : MenuScreen
     
     private void ShowSettingsScreen(ClickEvent evt)
     {
-        throw new NotImplementedException();
+        m_UIController.ShowSettingsScreen();
     }
 
     private void ShowAddFiendScreen(ClickEvent evt)

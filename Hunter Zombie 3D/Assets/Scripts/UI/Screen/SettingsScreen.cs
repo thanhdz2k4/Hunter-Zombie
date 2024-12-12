@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,7 +12,7 @@ public struct DataSetting
     public string desciption;
     public List<string> value;    
 
-     }
+    }
 
 
 public class SettingsScreen : MenuScreen
@@ -30,6 +31,20 @@ public class SettingsScreen : MenuScreen
     [SerializeField] string id_Show_FPS__Button;
     [SerializeField] string id_Title_Settings__Label;
     [SerializeField] string id_Desciption_Settings__Label;
+
+    [SerializeField] string id_Target_Display__DropDown;
+    [SerializeField] string id_Display_Mode__DropDown;
+    [SerializeField] string id_Aspect_Ratio__DropDown;
+    [SerializeField] string id_Resolution__DropDown;
+    [SerializeField] string id_Anti_Aliasing__DropDown;
+    [SerializeField] string id_Super_Resolution__DropDown;
+    [SerializeField] string id_Frame_Generation__DropDown;
+    [SerializeField] string id_Low_Latency__DropDown;
+
+    [SerializeField] string id_Back__Button;
+
+
+    
 
     [Header("ID STYLE SHEET")]
     [SerializeField] string id_Select__Button;
@@ -61,6 +76,25 @@ public class SettingsScreen : MenuScreen
     Label m_Title_Settings__Label;
     Label m_Desciption_Settings__Label;
 
+    DropdownField m_Target_Display__DropDown;
+    DropdownField m__Display_Mode__DropDown;
+    DropdownField m__Aspect_Ratio__DropDown;
+    DropdownField m__Resolution__DropDown;
+    DropdownField m__Anti_Aliasing__DropDown;
+    DropdownField m__Super_Resolution__DropDown;
+    DropdownField m__Frame_Generation__DropDown;
+    DropdownField m__Low_Latency__DropDown;
+
+    Button m_Back__Button;
+
+
+
+    private void Start()
+    {
+        SetDataIntoDropdownButton();
+        SetDefaultDataDropDownButton();
+    }
+
 
     protected override void SetVisualElements()
     {
@@ -78,6 +112,18 @@ public class SettingsScreen : MenuScreen
         m_Title_Settings__Label = m_Root.Q<Label>(id_Title_Settings__Label);
         m_Desciption_Settings__Label = m_Root.Q<Label>(id_Desciption_Settings__Label);
 
+        m_Target_Display__DropDown = m_Root.Q<DropdownField>(id_Target_Display__DropDown);
+        m__Display_Mode__DropDown = m_Root.Q<DropdownField>(id_Display_Mode__DropDown);
+        m__Aspect_Ratio__DropDown = m_Root.Q<DropdownField>(id_Aspect_Ratio__DropDown);
+        m__Resolution__DropDown = m_Root.Q<DropdownField>(id_Resolution__DropDown);
+        m__Anti_Aliasing__DropDown = m_Root.Q<DropdownField>(id_Anti_Aliasing__DropDown);
+        m__Super_Resolution__DropDown = m_Root.Q<DropdownField>(id_Super_Resolution__DropDown);
+        m__Frame_Generation__DropDown = m_Root.Q<DropdownField>(id_Frame_Generation__DropDown);
+        m__Low_Latency__DropDown = m_Root.Q<DropdownField>(id_Low_Latency__DropDown);
+
+        m_Back__Button = m_Root.Q<Button>(id_Back__Button);
+
+
     }
 
 
@@ -94,6 +140,37 @@ public class SettingsScreen : MenuScreen
         m_Low_Latency__Button.RegisterCallback<ClickEvent>(Show_Low_InformationEvent);
         m_Limit_FPS__Button.RegisterCallback<ClickEvent>(Show_Limit_InformationEvent);
         m_Show_FPS__Button.RegisterCallback<ClickEvent>(Show_FPS_InformationEvent);
+
+        m_Back__Button.RegisterCallback<ClickEvent>(HandleCloseScreenEvent);
+    }
+
+    private void HandleCloseScreenEvent(ClickEvent evt)
+    {
+        m_UIController.ShowMainScreen();
+    }
+
+    private void SetDataIntoDropdownButton()
+    {
+        m_Target_Display__DropDown.choices = data_Target_Display__Button.value;
+        m__Display_Mode__DropDown.choices = data_Display_Mode__Button.value;
+        m__Aspect_Ratio__DropDown.choices = data_Aspect_Ratio__Button.value;
+        m__Resolution__DropDown.choices = data_Resolution__Button.value;
+        m__Anti_Aliasing__DropDown.choices = data_Anti_Aliasing__Button.value;
+        m__Super_Resolution__DropDown.choices = data_Super_Resolution__Button.value;
+        m__Frame_Generation__DropDown.choices = data_Frame_Generation__Button.value;
+        m__Low_Latency__DropDown.choices = data_Low_Latency__Button.value;
+    }
+
+    private void SetDefaultDataDropDownButton()
+    {
+        m_Target_Display__DropDown.index = 0;
+        m__Display_Mode__DropDown.index = 0;
+        m__Aspect_Ratio__DropDown.index = 0;
+        m__Resolution__DropDown.index = 0;
+        m__Anti_Aliasing__DropDown.index = 0;
+        m__Super_Resolution__DropDown.index = 0;
+        m__Frame_Generation__DropDown.index = 0;
+        m__Low_Latency__DropDown.index = 0;
     }
 
     private void HighLighElement(VisualElement newSelect, string inacetiveClass, string activeClass, VisualElement root)
