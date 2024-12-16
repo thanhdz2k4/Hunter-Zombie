@@ -35,7 +35,7 @@ public class UIController : MonoBehaviour
         if(inforGun_Screen != null) listOfScreens.Add(inforGun_Screen);
         if(settings_Screen != null) listOfScreens.Add(settings_Screen);
 
-        //ShowSettingsScreen();
+        
          
     }
 
