@@ -37,7 +37,7 @@
         <ui:Instance template="Information_Gun_Screen" name="Information_Gun_Screen" style="display: none;" />
         <ui:Instance template="Gun_Shop--Screen" name="Gun_Shop--Screen" style="display: none;" />
         <ui:Instance template="Settings-Screen" name="Settings-Screen" style="position: absolute; height: 90%; width: 100%; top: 110px; display: none;" />
-        <ui:VisualElement name="Equipment_Screen" style="flex-grow: 1; top: 0; display: none;">
+        <ui:VisualElement name="Equipment_Screen" style="flex-grow: 1; top: auto; display: none; position: absolute;">
             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/TextureRenderer/Player.renderTexture?fileID=8400000&amp;guid=28f4f4c1d95d51d42bceb88ccbbf9bfd&amp;type=2#Player&apos;); -unity-background-scale-mode: scale-to-fit; height: 1119px; width: 919px; position: absolute; top: -5px; left: -137px;" />
             <ui:VisualElement style="flex-grow: 1; position: absolute; height: 906px; width: 610px; top: auto; left: 30px; bottom: 30px; background-color: rgba(27, 15, 29, 0.2);">
                 <ui:VisualElement style="flex-grow: 0; width: 142px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; margin-right: 0; position: absolute; top: 114px; left: 358px; background-image: resource(&apos;UI/Sci-Fi Frames/Irregular Frames/Irregular (8)&apos;); height: 124px; -unity-background-scale-mode: scale-to-fit;">

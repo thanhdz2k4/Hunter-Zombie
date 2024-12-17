@@ -6,18 +6,27 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 01545705040450595558082347775d44404e4e2974712036752d4b67b6b26660
-      flags: 0
-    RecentlyUsedSceneGuid-1:
       value: 0250000504070d080e595b7514700e4445151b7b757a76367d7b4d62e1e1673d
       flags: 0
-    RecentlyUsedSceneGuid-2:
+    RecentlyUsedSceneGuid-1:
       value: 0509550356565d0b0e5c5c27412208444516417f797c27607b784d61b7b66d3a
       flags: 0
-    RecentlyUsedSceneGuid-3:
+    RecentlyUsedSceneGuid-2:
       value: 5a5757560101590a5d0c0e24427b5d44434e4c7a7b7a23677f2b4565b7b5353a
       flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 0752025e5d56515f0e56087546775b444115497d757f20652f711860e4b56561
+      flags: 0
     RecentlyUsedSceneGuid-4:
+      value: 0608570500515d020e0b5b7014220e4444151b7d7d2d22632f7d1f64bab0376f
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 060106555307505e595a592640735a4414151929747b7069757c4d62b4b9613e
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 01545705040450595558082347775d44404e4e2974712036752d4b67b6b26660
+      flags: 0
+    RecentlyUsedSceneGuid-7:
       value: 0001505f51010a5a540a092414710f44424e1a297f7b703578791964b7e16460
       flags: 0
     UIBuilder.DisableMouseWheelZooming:

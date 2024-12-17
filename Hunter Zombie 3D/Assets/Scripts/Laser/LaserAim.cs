@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 public class LaserAim : MonoBehaviour, IAim
 {
@@ -17,6 +18,7 @@ public class LaserAim : MonoBehaviour, IAim
     private LineRenderer laserRenderer;
     [SerializeField] private float laserLength;
     [SerializeField] private GameObject point;
+    [SerializeField] Animator animator;
     
     private void Start() 
     {
@@ -29,7 +31,14 @@ public class LaserAim : MonoBehaviour, IAim
     } 
 
     private void LateUpdate() {
-       Aim(true);
+    
+       if(Input.GetKeyDown(KeyCode.Q)) {
+        isAim = !isAim;
+       
+        animator.SetBool("Aiming", isAim);
+       }
+        Cursor.visible = !isAim;
+       Aim(isAim);
     }
 
     public void Aim(bool isAim)

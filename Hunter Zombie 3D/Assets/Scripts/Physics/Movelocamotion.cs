@@ -51,7 +51,7 @@ public class Movelocamotion : MonoBehaviour
         Vector2 input = inputASWD.Data();
         animator.SetFloat("X", input.x);
         animator.SetFloat("Y", input.y);
-        animator.SetBool("Aiming", input.x!=0 || input.y < 0);
+
 
         if(input.y > 0) AdjustSpeed(input.y);
         else StopMovement();
