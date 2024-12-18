@@ -9,8 +9,9 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] int buttet_Quantity;
     [SerializeField] float fireRate = 0.1f;
-    private float nextFireTime;
-    [SerializeField] private bool isReload;
+    [SerializeField]  bool isReload;
+    [SerializeField] Playable Gun_Behaviour;
+    float nextFireTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,22 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
-        Shooting();
+        ShootingAnmation();
+    }
+
+    void LateUpdate()
+    {
+        ShootingBullet();
+    }
+
+    private void ShootingBullet()
+    {
+        Gun_Behaviour.IsPlay(!isReload);
+
     }
 
 
-    private void Shooting()
+    private void ShootingAnmation()
     {
         if(!isReload)
         {

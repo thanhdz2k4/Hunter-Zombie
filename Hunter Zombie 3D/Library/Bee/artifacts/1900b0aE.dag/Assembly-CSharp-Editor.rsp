@@ -413,6 +413,7 @@
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/EditorResources.cs"
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/FxStyles.cs"
 "Assets/Flooded_Grounds/PostProcessing/Editor/Utils/ReflectionUtils.cs"
+"Assets/Resources/VFX'/Impact/WarFX/Editor/CFX_SpawnSystemEditor.cs"
 -langversion:9.0
 
 /deterministic

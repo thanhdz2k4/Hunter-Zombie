@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class Playable : MonoBehaviour
 {
-    public abstract void IsPlay();
+    public abstract void IsPlay(bool isPlay);
 }

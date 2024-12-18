@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Pool;
+using Random = UnityEngine.Random;
+
 
 public class Trail : SpawnableGeneric<TrailRenderer>
 {
@@ -11,8 +14,18 @@ public class Trail : SpawnableGeneric<TrailRenderer>
     [SerializeField] Transform bullet_SpawnPoint;
     [SerializeField] LayerMask ground_Mask;
     [SerializeField] LayerMask enemy_Mask;
+    [SerializeField] Vector3 bullet_Direction;
+    [SerializeField] Vector3 BulletSpreadVariance = new Vector3(0.1f, 0.1f, 0.1f);
+    [SerializeField] bool is_Add_BulletSpread = true;
+    [SerializeField] ParticleSystem ImpactBloodParticleSystem;
+    [SerializeField] ParticleSystem ImpactNormalParticleSystem;
 
-       Vector3 direction_Spawn;
+
+    Vector3 direction_Spawn;
+
+    
+
+
     public override void Initialize()
     {
         Pool = new ObjectPool<TrailRenderer>(
@@ -27,10 +40,11 @@ public class Trail : SpawnableGeneric<TrailRenderer>
 
     public override void Spawn()
     {
-        
+        direction_Spawn = GetDirection();
+        SpawnTrail();
     }
 
-    private void SpawnTrail(TrailRenderer trailRenderer)
+    private void SpawnTrail()
     {
         if (Physics.Raycast(bullet_SpawnPoint.position, direction_Spawn, out RaycastHit hit, float.MaxValue, ground_Mask))
         {
@@ -73,15 +87,40 @@ public class Trail : SpawnableGeneric<TrailRenderer>
         Pool.Release(Trail);
     }
 
-    private void SpawnImpact(Vector3 hitPoint, Vector3 hitNormal, bool madeImpact, LayerMask layerMask)
+    private void SpawnImpact(Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask hitLayer)
     {
-        throw new NotImplementedException();
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        int groundLayer = LayerMask.NameToLayer("Ground");
+        Debug.Log("SpawnImpact");
+
+        // Check if the impact happened on the "Enemy" layer
+        if (MadeImpact && (hitLayer & (1 << enemyLayer)) != 0)
+        {
+            Instantiate(ImpactBloodParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+            Debug.Log("Enemy impact");
+        }
+
+        // Check if the impact happened on the "Ground" layer
+        if (MadeImpact && (hitLayer & (1 << groundLayer)) != 0)
+        {
+            Instantiate(ImpactNormalParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+            Debug.Log("Ground impact");
+        }
     }
 
     private Vector3 GetDirection()
     {
-        Vector3 direction = new Vector3(1,1,1);
-        
+         Vector3 direction = bullet_SpawnPoint.up * -1 + bullet_Direction;
+        if (is_Add_BulletSpread)
+        {
+            direction += new Vector3(
+                Random.Range(-BulletSpreadVariance.x, BulletSpreadVariance.x),
+                Random.Range(-BulletSpreadVariance.y, BulletSpreadVariance.y),
+                Random.Range(-BulletSpreadVariance.z, BulletSpreadVariance.z)
+            );
+
+            direction.Normalize();
+        }
         Vector3 x =  direction.normalized;
         return x;
     }

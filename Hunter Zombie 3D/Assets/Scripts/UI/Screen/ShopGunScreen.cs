@@ -28,7 +28,6 @@ public class ShopGunScreen : MenuScreen
     {
         this.data = list;
         LoadDataIntoScrollView(list);
-        Debug.Log("hiiiiiiiiiiiiiii");
         Debug.Log(list.Count);
     }
 
