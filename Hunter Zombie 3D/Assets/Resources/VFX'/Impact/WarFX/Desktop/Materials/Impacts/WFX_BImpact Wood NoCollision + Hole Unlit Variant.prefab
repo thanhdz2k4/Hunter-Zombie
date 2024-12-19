@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: ShapeModule.angle
-      value: 65.7
+      value: 24.46
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: moveWithTransform
@@ -106,7 +106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 0.5
+      value: 0.0001
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 9bdf482976052a647946e8159033a295, type: 3}
       propertyPath: CollisionModule.radiusScale

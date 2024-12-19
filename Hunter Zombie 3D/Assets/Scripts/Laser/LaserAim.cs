@@ -32,7 +32,7 @@ public class LaserAim : MonoBehaviour, IAim
 
     private void LateUpdate() {
     
-       if(Input.GetKeyDown(KeyCode.Q)) {
+       if(Input.GetKeyDown(KeyCode.Mouse1)) {
         isAim = !isAim;
        
         animator.SetBool("Aiming", isAim);

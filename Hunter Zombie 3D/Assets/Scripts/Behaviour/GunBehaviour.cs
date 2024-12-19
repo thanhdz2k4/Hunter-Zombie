@@ -14,10 +14,10 @@ public class GunBehaviour : Playable
     {
         if (isPlay)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                spawnable.Spawn();
-            }
+            // if (Input.GetKeyDown(KeyCode.Mouse0))
+            // {
+            //     spawnable.Spawn();
+            // }
             if (Input.GetKey(KeyCode.Mouse0) && Time.time > LastShootTime)
             {
 

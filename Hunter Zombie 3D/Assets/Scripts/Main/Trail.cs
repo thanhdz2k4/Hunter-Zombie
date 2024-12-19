@@ -19,11 +19,7 @@ public class Trail : SpawnableGeneric<TrailRenderer>
     [SerializeField] bool is_Add_BulletSpread = true;
     [SerializeField] ParticleSystem ImpactBloodParticleSystem;
     [SerializeField] ParticleSystem ImpactNormalParticleSystem;
-
-
-    Vector3 direction_Spawn;
-
-    
+    [SerializeField] GameObject aim_obj;
 
 
     public override void Initialize()
@@ -38,35 +34,41 @@ public class Trail : SpawnableGeneric<TrailRenderer>
         );
     }
 
+    private void LateUpdate()
+    {
+        //direction_Spawn = GetDirection();
+        Vector3 direction = (aim_obj.transform.position - bullet_SpawnPoint.position).normalized;
+        //Debug.DrawLine(bullet_SpawnPoint.position, direction, Color.red);
+        Debug.DrawLine(bullet_SpawnPoint.position, bullet_SpawnPoint.position + direction * 5, Color.red);
+    }
+
     public override void Spawn()
     {
-        direction_Spawn = GetDirection();
         SpawnTrail();
     }
 
     private void SpawnTrail()
     {
-        if (Physics.Raycast(bullet_SpawnPoint.position, direction_Spawn, out RaycastHit hit, float.MaxValue, ground_Mask))
-        {
-            
-            StartCoroutine(SpawnTrail(GetTrail(), hit.point, hit.normal, true, ground_Mask));
-        }
-        if (Physics.Raycast(bullet_SpawnPoint.position, direction_Spawn, out RaycastHit hit1, float.MaxValue, enemy_Mask))
-        {
+         Vector3 direction = GetDirection(); // Get the calculated direction
 
-            StartCoroutine(SpawnTrail(GetTrail(), hit1.point, hit1.normal, true, enemy_Mask));
-        }
-
-        else
-        {
-            StartCoroutine(SpawnTrail(GetTrail(), bullet_SpawnPoint.position + GetDirection() * 100, Vector3.zero, false, ground_Mask));   
-        }
+    // Perform a raycast to detect what the bullet hits
+    if (Physics.Raycast(bullet_SpawnPoint.position, direction, out RaycastHit hit, Mathf.Infinity, ground_Mask | enemy_Mask))
+    {
+        // If the raycast hits something, spawn the trail towards the hit point
+        StartCoroutine(SpawnTrail(GetTrail(), hit.point, hit.normal, true, hit.collider.gameObject.layer, hit.collider));
+    }
+    else
+    {
+        // If the raycast hits nothing, spawn the trail in the calculated direction to a maximum distance
+        StartCoroutine(SpawnTrail(GetTrail(), bullet_SpawnPoint.position + direction * 100, Vector3.zero, false, ground_Mask, null));
+    }
+       
     }
 
-    private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask layerMask)
+    private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask layerMask, Collider collider)
     {
-
         // Distance calculation
+        
         Vector3 startPosition = Trail.transform.position;
         float distance = Vector3.Distance(Trail.transform.position, HitPoint);
         float remainingDistance = distance;
@@ -82,35 +84,27 @@ public class Trail : SpawnableGeneric<TrailRenderer>
         }
 
         Trail.transform.position = HitPoint;
-        SpawnImpact(HitPoint, HitNormal, MadeImpact, layerMask);
+
+        if (MadeImpact)
+        {
+        if (layerMask == LayerMask.NameToLayer("Enemy") && ImpactBloodParticleSystem != null)
+        {
+                //Instantiate(ImpactBloodParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+                collider.GetComponent<IGetDamage>().GetDamage(1);
+        }
+        else if (ImpactNormalParticleSystem != null)
+        {
+            Instantiate(ImpactNormalParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+        }
+    }
 
         Pool.Release(Trail);
     }
 
-    private void SpawnImpact(Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask hitLayer)
-    {
-        int enemyLayer = LayerMask.NameToLayer("Enemy");
-        int groundLayer = LayerMask.NameToLayer("Ground");
-        Debug.Log("SpawnImpact");
-
-        // Check if the impact happened on the "Enemy" layer
-        if (MadeImpact && (hitLayer & (1 << enemyLayer)) != 0)
-        {
-            Instantiate(ImpactBloodParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
-            Debug.Log("Enemy impact");
-        }
-
-        // Check if the impact happened on the "Ground" layer
-        if (MadeImpact && (hitLayer & (1 << groundLayer)) != 0)
-        {
-            Instantiate(ImpactNormalParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
-            Debug.Log("Ground impact");
-        }
-    }
-
+    
     private Vector3 GetDirection()
     {
-         Vector3 direction = bullet_SpawnPoint.up * -1 + bullet_Direction;
+        Vector3 direction = (aim_obj.transform.position - bullet_SpawnPoint.position).normalized;
         if (is_Add_BulletSpread)
         {
             direction += new Vector3(

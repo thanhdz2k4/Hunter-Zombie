@@ -21,11 +21,12 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         ShootingAnmation();
+         
     }
 
     void LateUpdate()
     {
-        ShootingBullet();
+       ShootingBullet();
     }
 
     private void ShootingBullet()
