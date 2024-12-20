@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,12 +39,22 @@ public class Movelocamotion : MonoBehaviour
     private void Update()
     {
         HandleMovement();
+        HandleRoll();
     }
 
     private void FixedUpdate()
     {
         ApplyPhysicsMovement();
     }
+
+    private void HandleRoll()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            animator.SetTrigger("Roll");
+        }
+    }
+
 
     private void HandleMovement()
     {
@@ -56,6 +67,8 @@ public class Movelocamotion : MonoBehaviour
         if(input.y > 0) AdjustSpeed(input.y);
         if(input.y == 0) StopMovement();
     }
+
+    //private void Hand;e
 
     // make smooth speed
     private void AdjustSpeed(float targetSpeedMultiplier)
