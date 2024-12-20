@@ -55,7 +55,7 @@ public class MenuScreen : MonoBehaviour
     {
         //  if (string.IsNullOrEmpty(m_ScreenName) || m_Root == null)
         //     return null;
-        Debug.Log(m_Root.Q(m_ScreenName));
+        //Debug.Log(m_Root.Q(m_ScreenName));
         // query and return the element;
         return m_Root.Q(m_ScreenName);
     }

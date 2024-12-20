@@ -31,7 +31,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _BodyAlpha: 1
-    - _OutlineWidth: 0.09
+    - _OutlineFactor: 1
+    - _OutlineWidth: 0.02
     - _Stencil: 16
     m_Colors:
     - _OutlineColor: {r: 0.9705882, g: 0.07136679, b: 0.07136679, a: 1}

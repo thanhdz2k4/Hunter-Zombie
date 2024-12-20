@@ -28,7 +28,7 @@ public class ShopGunScreen : MenuScreen
     {
         this.data = list;
         LoadDataIntoScrollView(list);
-        Debug.Log(list.Count);
+        
     }
 
     protected override void SetVisualElements()

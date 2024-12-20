@@ -1,21 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="Current" Sdk="Microsoft.NET.Sdk">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <LangVersion>9.0</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup>
+    <Configurations>Debug;Release</Configurations>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EE510F5A-AA37-73E7-F926-7B9E79517B0D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,14 +36,13 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <NoConfig>true</NoConfig>
+    <NoStandardLibraries>true</NoStandardLibraries>
     <NoStdLib>true</NoStdLib>
-    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
-    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
-    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+    <NoConfig>true</NoConfig>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
   </PropertyGroup>
   <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.21</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
@@ -54,7 +50,7 @@
     <UnityVersion>2022.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\admin\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.5\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -79,6 +75,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Scripts\Interface\IGetDamage.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\Scripts\Enemy\State Machine\ConcreteState\EnemyAttackState.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\UserLutModel.cs" />
@@ -95,6 +92,7 @@
     <Compile Include="Assets\Scripts\Interface\ITakeDamage.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy Types\Ghoul.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\GrainModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Scripts\Interface\IMousePositionProvider.cs" />
@@ -102,6 +100,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\Scripts\Enemy\State Machine\EnemyStateMachine.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\Scripts\Behaviour\GunBehaviour.cs" />
@@ -109,9 +108,12 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\UI\Template\PlayerTemplate.cs" />
+    <Compile Include="Assets\Scripts\Enemy\State Machine\EnemyState.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\Enemy\State Machine\ConcreteState\EnemyChaseState.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\Scripts\Enemy\State Machine\ConcreteState\EnemyPatrolState.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\InforPlayer.cs" />
     <Compile Include="Assets\Scripts\Interface\IGravityLocamotion.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\FxaaComponent.cs" />
@@ -164,12 +166,16 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\GrainComponent.cs" />
     <Compile Include="Assets\Scripts\Input\InputAWSD.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\InforPayerScreen.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\Scripts\Physics\Movelocamotion.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Demo\Assets\WFX_Demo_New.cs" />
     <Compile Include="Assets\Scripts\UI\Controller\PlayerTemplateController.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\MainToast.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Base\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Interface\IEnemyMoveable.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\IntroScreen.cs" />
+    <Compile Include="Assets\Scripts\State\EnumState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
@@ -990,13 +996,4 @@
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

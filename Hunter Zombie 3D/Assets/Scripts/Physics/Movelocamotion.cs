@@ -54,7 +54,7 @@ public class Movelocamotion : MonoBehaviour
 
 
         if(input.y > 0) AdjustSpeed(input.y);
-        else StopMovement();
+        if(input.y == 0) StopMovement();
     }
 
     // make smooth speed

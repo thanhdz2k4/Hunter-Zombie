@@ -68,7 +68,7 @@ public class Trail : SpawnableGeneric<TrailRenderer>
     private IEnumerator SpawnTrail(TrailRenderer Trail, Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask layerMask, Collider collider)
     {
         // Distance calculation
-        
+
         Vector3 startPosition = Trail.transform.position;
         float distance = Vector3.Distance(Trail.transform.position, HitPoint);
         float remainingDistance = distance;
@@ -85,23 +85,27 @@ public class Trail : SpawnableGeneric<TrailRenderer>
 
         Trail.transform.position = HitPoint;
 
-        if (MadeImpact)
-        {
-        if (layerMask == LayerMask.NameToLayer("Enemy") && ImpactBloodParticleSystem != null)
-        {
-                //Instantiate(ImpactBloodParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
-                collider.GetComponent<IGetDamage>().GetDamage(1);
-        }
-        else if (ImpactNormalParticleSystem != null)
-        {
-            Instantiate(ImpactNormalParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
-        }
-    }
+        Impact_VFX(HitPoint, HitNormal, MadeImpact, layerMask, collider);
 
         Pool.Release(Trail);
     }
 
-    
+    private void Impact_VFX(Vector3 HitPoint, Vector3 HitNormal, bool MadeImpact, LayerMask layerMask, Collider collider)
+    {
+        if (MadeImpact)
+        {
+            if (layerMask == LayerMask.NameToLayer("Enemy") && ImpactBloodParticleSystem != null)
+            {
+                //Instantiate(ImpactBloodParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+                collider.GetComponent<IGetDamage>().GetDamage(1);
+            }
+            else if (ImpactNormalParticleSystem != null)
+            {
+                Instantiate(ImpactNormalParticleSystem, HitPoint, Quaternion.LookRotation(HitNormal));
+            }
+        }
+    }
+
     private Vector3 GetDirection()
     {
         Vector3 direction = (aim_obj.transform.position - bullet_SpawnPoint.position).normalized;
