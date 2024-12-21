@@ -109,6 +109,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\Scripts\Behaviour\GunBehaviour.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSController\CharController_Motor.cs" />
+    <Compile Include="Assets\Scripts\VFX\UI\FloatingText.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\UI\Template\PlayerTemplate.cs" />
@@ -168,6 +169,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\Scripts\VFX\UI\SpawnFloatingText.cs" />
     <Compile Include="Assets\Scripts\Input\InputAWSD.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\InforPayerScreen.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
@@ -182,10 +184,12 @@
     <Compile Include="Assets\Scripts\State\EnumState.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Multiply Soft.shader" />
     <None Include="Assets\UI\USS\Screen\Settings_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\Infor_Player--Container.uxml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\GrainGen.shader" />
     <None Include="Assets\UI\UXML\Toast\Toast.uxml" />
@@ -195,6 +199,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\Resources\Model\SciFi_Space_Soldier\Resources\Shaders\SpaceStation_PBR_Basic.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\LutGen.shader" />
@@ -202,7 +207,9 @@
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\OutlineEffect\VerticesOutline_Always.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Alpha-Specular TintColor.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\OutlineEffect\VerticesOutline_Normal.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\UI\USS\Screen\Infor_Gun_Screen.uss" />
@@ -213,6 +220,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\UI\UXML\Screens\ShopCashScreen.uxml" />
     <None Include="Assets\UI\USS\Screen\Option_Screen.uss" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\UI\UXML\Screens\Intro--Screen.uxml" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
@@ -225,21 +233,29 @@
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\UI\UXML\Screens\Toast_Main.uxml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\NewSurfaceShader.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\OutlineEffect\Readme.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\UI\USS\Screen\Shop_Screen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ACES.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
     <None Include="Assets\UI\USS\Screen\Infor_Friend_Screen.uss" />
     <None Include="Assets\UI\UXML\Screens\Settings-Screen.uxml" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\UI\USS\Base\Gun_Template.uss" />
     <None Include="Assets\UI\USS\Screen\IntroScreen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\UI\USS\Base\Pointer.uss" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_PBR_TopBlend.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -248,6 +264,7 @@
     <None Include="Assets\UI\UXML\Screens\Loading--Screen.uxml" />
     <None Include="Assets\UI\UXML\Screens\Information_Gun_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
     <None Include="Assets\UI\UXML\Template Item\Friend_Template.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\Trackball.shader" />
@@ -262,6 +279,7 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\UI\UXML\Template Item\Gun_Component.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.shader" />
     <None Include="Assets\UI\UXML\Screens\Add_Friend--Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeaves.shader" />
@@ -272,13 +290,18 @@
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\!WarFX Readme.txt" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Alpha-Diffuse TintColor.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\UI\UXML\Screens\PlayScreen.uxml" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Triplanar_BumpSpec.shader" />
     <None Include="Assets\UI\UXML\Screens\Infor_Friend--Screen.uxml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
     <None Include="Assets\UI\UXML\Screens\Main--Screen.uxml" />
     <None Include="Assets\UI\USS\Base\Toolbar.uss" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_Skybox_Rotating.shader" />
     <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_PBR_Water.shader" />
   </ItemGroup>

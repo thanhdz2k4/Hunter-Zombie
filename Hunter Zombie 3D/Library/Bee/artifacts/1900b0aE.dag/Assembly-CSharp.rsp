@@ -481,6 +481,8 @@
 "Assets/Scripts/VFX/Audio/AudioBase.cs"
 "Assets/Scripts/VFX/Audio/AudioManager.cs"
 "Assets/Scripts/VFX/Audio/AudioTypeText.cs"
+"Assets/Scripts/VFX/UI/FloatingText.cs"
+"Assets/Scripts/VFX/UI/SpawnFloatingText.cs"
 "Assets/Scripts/VFX/UI/TypeOutScript.cs"
 -langversion:9.0
 
