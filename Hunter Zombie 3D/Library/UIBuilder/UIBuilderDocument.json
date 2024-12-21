@@ -17,41 +17,41 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "c980d52e24a01c94797be95de3ba1cfc",
+                            "guid": "52e2b557538f17b42901c03f2bb23f1e",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
                             "instanceID": 0
                         },
-                        "m_OldPath": "Assets/UI/USS/Base/Pointer.uss"
+                        "m_OldPath": "Assets/UI/USS/Screen/Equipment_Screen.uss"
                     }
                 ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Screens/PlayScreen.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/Equipment_Screen.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "7e9b61a675767714da7c001df854712c",
+                    "guid": "9287411cf1371cb489d28dc8b804b654",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "fileID": 7433441132597879392,
-                    "guid": "c980d52e24a01c94797be95de3ba1cfc",
+                    "guid": "52e2b557538f17b42901c03f2bb23f1e",
                     "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "7e9b61a675767714da7c001df854712c",
-                    "UxmlPath": "Assets/UI/UXML/Screens/PlayScreen.uxml",
-                    "CanvasX": 67,
+                    "UxmlGuid": "9287411cf1371cb489d28dc8b804b654",
+                    "UxmlPath": "Assets/Equipment_Screen.uxml",
+                    "CanvasX": 0,
                     "CanvasY": 0,
                     "CanvasWidth": 1920,
                     "CanvasHeight": 1080,
-                    "MatchGameView": false,
-                    "ZoomScale": 1.5,
+                    "MatchGameView": true,
+                    "ZoomScale": 0.4000000059604645,
                     "PanOffset": {
-                        "x": 53.158966064453128,
-                        "y": -535.4783325195313
+                        "x": -53.19659423828125,
+                        "y": 166.60272216796876
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
@@ -59,9 +59,9 @@
                     "EnableCanvasBackground": false,
                     "CanvasBackgroundMode": 0,
                     "CanvasBackgroundColor": {
-                        "r": 0.4528301954269409,
-                        "g": 0.37379851937294009,
-                        "b": 0.37379851937294009,
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
                         "a": 1.0
                     },
                     "CanvasBackgroundImage": {

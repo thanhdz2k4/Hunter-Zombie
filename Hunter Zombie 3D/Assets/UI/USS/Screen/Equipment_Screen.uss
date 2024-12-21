@@ -1,0 +1,37 @@
+.Item_Equiment {
+}
+
+.Item_Equiment:hover {
+    -unity-background-image-tint-color: rgb(0, 255, 255);
+    border-left-color: rgb(0, 247, 255);
+    border-right-color: rgb(0, 247, 255);
+    border-top-color: rgb(0, 247, 255);
+    border-bottom-color: rgb(0, 247, 255);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.Item_Weapon {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+.Item_Weapon:hover {
+    background-color: rgba(0, 239, 255, 0.16);
+    border-left-color: rgb(0, 255, 212);
+    border-right-color: rgb(0, 255, 212);
+    border-top-color: rgb(0, 255, 212);
+    border-bottom-color: rgb(0, 255, 212);
+}

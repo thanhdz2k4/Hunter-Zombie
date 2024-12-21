@@ -1,0 +1,31 @@
+.Unselect_Icons_Inventory--Button {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 255, 242, 0.08);
+}
+
+.Select_Icons_Inventory--Button {
+    border-left-color: rgb(0, 247, 255);
+    border-right-color: rgb(0, 247, 255);
+    border-top-color: rgb(0, 247, 255);
+    border-bottom-color: rgb(0, 247, 255);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: rgba(0, 255, 244, 0.35);
+}
+
+.Unselect_Icons_Inventory--Button:hover {
+    border-left-color: rgb(0, 255, 250);
+    border-right-color: rgb(0, 255, 250);
+    border-top-color: rgb(0, 255, 250);
+    border-bottom-color: rgb(0, 255, 250);
+    background-color: rgba(0, 255, 250, 0.18);
+}

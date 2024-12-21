@@ -200,7 +200,9 @@
     <None Include="Assets\Flooded_Grounds\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
     <None Include="Assets\Resources\Model\SciFi_Space_Soldier\Resources\Shaders\SpaceStation_PBR_Basic.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\UI\USS\Screen\Equipment_Screen.uss" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+    <None Include="Assets\Equipment_Screen.uxml" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\LutGen.shader" />
     <None Include="Assets\Flooded_Grounds\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
@@ -234,6 +236,7 @@
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
     <None Include="Assets\UI\UXML\Screens\Toast_Main.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\UI\USS\Base\Inventory_Slot.uss" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\NewSurfaceShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -299,6 +302,7 @@
     <None Include="Assets\UI\UXML\Screens\Infor_Friend--Screen.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Resources\VFX&apos;\Impact\WarFX\Shaders\WFX_S AlphaBlend NoSoftParticles.shader" />
+    <None Include="Assets\UI\UXML\Template Item\Inventory_Slot.uxml" />
     <None Include="Assets\UI\UXML\Screens\Main--Screen.uxml" />
     <None Include="Assets\UI\USS\Base\Toolbar.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
