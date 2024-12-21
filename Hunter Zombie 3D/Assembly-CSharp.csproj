@@ -82,8 +82,10 @@
     <Compile Include="Assets\Scripts\Enemy\State Machine\ConcreteState\EnemyAttackState.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\Scripts\UI\Template\ItemTemplate.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\UserLutModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\Scripts\SO\ItemSO.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\ListPlayerScreen.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\WaterFloat.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\PostProcessingContext.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Assets\Scripts\UI\Screen\InforPlayer.cs" />
     <Compile Include="Assets\Scripts\Interface\IGravityLocamotion.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\EquipmentScreen.cs" />
     <Compile Include="Assets\Scripts\VFX\Audio\AudioBase.cs" />
     <Compile Include="Assets\Resources\VFX&apos;\Impact\WarFX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Scripts\Interface\IAim.cs" />

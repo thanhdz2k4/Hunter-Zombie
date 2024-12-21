@@ -15,6 +15,7 @@ public class UIController : MonoBehaviour
     [SerializeField] ShopGunScreen gunShop_Screen;
     [SerializeField] InforGunScreen inforGun_Screen;
     [SerializeField] SettingsScreen settings_Screen;
+    [SerializeField] EquipmentScreen equipment_Screen;
 
     [Header("TOOLBAR")]
     [SerializeField] Toolbar toolbar;
@@ -34,9 +35,15 @@ public class UIController : MonoBehaviour
         if(gunShop_Screen != null) listOfScreens.Add(gunShop_Screen);
         if(inforGun_Screen != null) listOfScreens.Add(inforGun_Screen);
         if(settings_Screen != null) listOfScreens.Add(settings_Screen);
+        if (equipment_Screen != null) listOfScreens.Add(equipment_Screen);
 
         
          
+    }
+
+    public void ShowEquipmentScreen()
+    {
+        ShowModalScreen(equipment_Screen, listOfScreens);
     }
 
     public void ShowSettingsScreen() 

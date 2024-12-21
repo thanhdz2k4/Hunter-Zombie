@@ -3,10 +3,10 @@
     border-right-color: rgb(255, 255, 255);
     border-top-color: rgb(255, 255, 255);
     border-bottom-color: rgb(255, 255, 255);
-    border-bottom-width: 1px;
-    border-top-width: 1px;
-    border-right-width: 0;
-    border-left-width: 0;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-left-width: 1px;
     background-color: rgba(0, 255, 242, 0.08);
 }
 
@@ -28,4 +28,16 @@
     border-top-color: rgb(0, 255, 250);
     border-bottom-color: rgb(0, 255, 250);
     background-color: rgba(0, 255, 250, 0.18);
+}
+
+.Null_Icons_Inventory {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-bottom-width: 0;
+    border-left-width: 1px;
 }

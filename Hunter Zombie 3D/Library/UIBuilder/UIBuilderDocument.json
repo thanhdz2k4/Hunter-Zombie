@@ -17,41 +17,96 @@
                     {
                         "m_StyleSheet": {
                             "fileID": 7433441132597879392,
-                            "guid": "52e2b557538f17b42901c03f2bb23f1e",
+                            "guid": "c980d52e24a01c94797be95de3ba1cfc",
                             "type": 3
                         },
                         "m_BackupStyleSheet": {
                             "instanceID": 0
                         },
-                        "m_OldPath": "Assets/UI/USS/Screen/Equipment_Screen.uss"
+                        "m_OldPath": "Assets/UI/USS/Base/Pointer.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "758996f98eaf4784ca9d5ec91faf4cfc",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Screen/Option_Screen.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "3694a2615e2976542a9ebdd2c7112362",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Screen/MainScreen.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "9f466b03f6b2ab0469d1f74e9f585b15",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Base/Toolbar.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "a8d8253b140215f47b1ef50434f21051",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Screen/Shop_Screen.uss"
+                    },
+                    {
+                        "m_StyleSheet": {
+                            "fileID": 7433441132597879392,
+                            "guid": "44ffe168d24e87a4cb90bed32b807fdc",
+                            "type": 3
+                        },
+                        "m_BackupStyleSheet": {
+                            "instanceID": 0
+                        },
+                        "m_OldPath": "Assets/UI/USS/Screen/Infor_Gun_Screen.uss"
                     }
                 ],
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/Equipment_Screen.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/UI/UXML/Screens/PlayGame_Screen.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "9287411cf1371cb489d28dc8b804b654",
+                    "guid": "6c8842411bc5e734b97ad0c6b7c652bc",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "fileID": 7433441132597879392,
-                    "guid": "52e2b557538f17b42901c03f2bb23f1e",
+                    "guid": "c980d52e24a01c94797be95de3ba1cfc",
                     "type": 3
                 },
                 "m_Settings": {
-                    "UxmlGuid": "9287411cf1371cb489d28dc8b804b654",
-                    "UxmlPath": "Assets/Equipment_Screen.uxml",
-                    "CanvasX": 0,
-                    "CanvasY": 0,
+                    "UxmlGuid": "6c8842411bc5e734b97ad0c6b7c652bc",
+                    "UxmlPath": "Assets/UI/UXML/Screens/PlayGame_Screen.uxml",
+                    "CanvasX": 28,
+                    "CanvasY": -3,
                     "CanvasWidth": 1920,
                     "CanvasHeight": 1080,
-                    "MatchGameView": true,
-                    "ZoomScale": 0.4000000059604645,
+                    "MatchGameView": false,
+                    "ZoomScale": 1.0499999523162842,
                     "PanOffset": {
-                        "x": -53.19659423828125,
-                        "y": 166.60272216796876
+                        "x": -1102.0760498046875,
+                        "y": -74.14566040039063
                     },
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
